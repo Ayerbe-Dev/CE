@@ -1,0 +1,1379 @@
+﻿Global
+
+
+* Added Microdashing
+* If you tap Shield during the first 3 frames of your dash, on frame 4 your dash will be canceled into a sped up version of the run brake animation, with its FAF being 7 starting from the dash input
+* If you tap Shield between frames 4-6, your dash will be canceled into a sped up run brake animation starting on frame 8, with its FAF being 14 starting from the dash input
+* Because this mechanic has the same properties as a run brake, pressing back during the first 3 frames will send into run skid, allowing you to pivot cancel much sooner from a standing position
+* Pivot Grabbing and run skid disable collision, and Pivot Grabs add a horizontal boost to the user
+* Edge canceling now applies to dashes, backdashes and landing lag
+* It is possible to drop through platforms during run, run brake and Shield
+* Shield only needs to be held for 1 frame before it can be released, down from 3
+* Shieldgrabbing can be executed 2 frames after Shieldstun ends, down from 4
+* Shield release out of Shieldstun takes 7 frames instead of 11
+* Parrying reworked:
+* Parry offers the user more advantage compared to Shielding (+3 > +5)
+* Parrying a projectile decreases hitlag by 5 frames, up from 2
+* The user will always be in hitlag for exactly 20 frames, making it significantly easier to time punishes after a successful parry
+* Pressing the Shield button during the last frame of a parry will cause you to go into Shield release, allowing for another parry even on moves with a 1 frame window such as Zelda Forward Smash
+* When parrying aerials, the attacker will take 3 extra frames of landing lag for each hit you parry except the first
+* Spotdodge Canceling has been removed 
+* Directional Airdodges have been reworked to act like they do in Rivals of Aether
+* Instead of falling and having complete control over your drift, you are held in place but are in lag for significantly less time than in vanilla Ultimate
+* This makes Directional Airdodges better for recovery, but worse for escaping combos since the loss of drift control after the airdodge makes them easier to punish
+* Frame Data: Frames 1-14 are spent moving, intangibility is frames 3-26, the user is stuck in place frames 14-38, and during frames 26-38, the user is vulnerable
+* The Directional Airdodge “sling” effect has been removed
+* Directional Airdodge universally has less landing lag (20 > 15)
+* When Airdodging up while underneath a platform, you will snap to the platform
+* Neutral Airdodge landing lag increased (10 > 15)
+* Airdodges out of tumble will no longer be canceled into a Tech 
+* For every character with a linking Jab, one hit of it can be canceled into any action 2 frames after the defender exits hitstun if the move connected 
+   * This allows for Jab mixups that aren’t true but can’t be punished by Jab out of hitstun unless the user has a Jab faster than frame 3
+* Note that for characters who already have a Jab that’s safe on hit (such as Samus), this change has not been added
+* Grab range has been near universally increased, and air-only grab hitboxes are now just as big as ground-only grab hitboxes
+* For characters without a tether grab, you can now perform a Grab Break if you’re in your grab startup at all, as opposed to just one frame before it comes out like for most characters
+* You can no longer break Command Grabs with a Grab Break
+* Footstooling can now be performed immediately after hitting an opponent
+* Item throws now incur 5 frames of extra landing lag which is applied to whatever aerial the user lands with unless they jump, airdodge or get hit before landing
+* Aerials universally gain 5 frames more landing lag on whiff, unless the aerial is a projectile
+* While you still can’t run through opponents, jostle boxes are significantly smaller, fixing many interactions involving bodyblocking
+* Balloon Knockback decreased
+* Hitstun slightly increased
+* Hitstun can no longer be canceled with options other than airdodges
+* It is now possible to fastfall during tumble after hitstun has ended
+* You can no longer buffer options during hitlag while transitioning from ground to air and vice versa
+* The C-Stick will now be used to determine aerial direction instead of the left stick whenever the C-Stick input is made before the beginning of jumpsquat unless the input was part of an Attack Cancel or C-IRAR
+* The C-Stick will only affect your aerial drift if the input was made on the frame you left jumpsquat
+* The Shorthop aerial buffer has been removed
+* Ledgejump endlag increased (FAF: 2 > 4)
+* Fountain of Dreams lag fixed
+* Castle Siege’s foreground piece has been removed
+* Spring Stadium Ceiling no longer has collision
+
+
+Mario
+Mario’s design is pretty much fine in my opinion. His changes are mostly just QoL adjustments and a few changes to make him have to think more in neutral. While Up Air’s new damage and knockback make it possible to DI his combos, the hitstun changes also give him new combo routes.
+
+
+* Up Smash has 1 more active frame
+* Bair range reduced (far hitbox size: 5.9/5.3 > 5.0, x offset: 4.8/1.6 > 4.5/1.5), Shieldstun decreased (frames: 4/3 > 2) and the move has more landing lag (6 > 8)
+* Up Air deals 1% more damage, bkb increased (10 > 20)
+* Dair multihits now use an autolink angle, fallouts fixed
+* Up B fallouts fixed
+
+
+Donkey Kong
+DK is in a weird spot. His design is inherently pretty well rounded, but he gets shut down really hard because of how he can be punished on hit combined with a bad recovery making being punished on hit a death sentence. While there are a lot of changes to DK, almost all of them are solely focused on hit safety with a few QoL changes.
+
+
+* Tipper Jab 1 knockback adjusted (bkb: 20 > 45, kbg: 20 > 25, angle: 180 > 130)
+* Jab 2 has less endlag (FAF: 35 > 30), now active f5-9
+* FTilt’s shoulder hitbox is bigger (size: 3.5 > 4.5)
+* Up Tilt has less endlag (FAF: 39 > 35), now has head and shoulder intangibility while the hitbox is active
+* DTilt’s Brawl inner hit has been restored, the outer hit is larger (x offset: 8.5 > 9, size: 5.5 > 6), the move has adjusted knockback (bkb: 10 > 30, kbg: 80 > 48), and less endlag (FAF: 25 > 22)
+* Up Smash knockback adjusted (bkb: 40 > 48, kbg: 84 > 80)
+* DSmash knockback adjusted (bkb: 30/35 > 72, kbg: 88 > 70), startup decreased (11 > 10)
+* Nair has a new hitbox on DK’s feet with the same stats as the other hitboxes but less kbg (100 > 80)
+* Fair’s early hitbox now covers both arms
+* Up Air’s head intangibility now starts on frame 1, animation adjusted so the move is better at hitting behind DK
+* Ground Neutral B bkb increased (45 > 65), uncharged version uses the same hitbox as charged
+* Air Neutral B bkb increased (60 > 70), z-axis issues fixed
+* Side B spike bkb increased (30 > 40), sourspot bkb increased (15 > 70), angle adjusted (70 > 40), and the move has less endlag (FAF: 63 > 56)
+* Ground Up B 1st hit angle adjusted (95/80/80 > 366/367/367), multihit back hitbox angle adjusted (60 > 15), knockback changes (bkb: 35 > 60), and there are new hitboxes in front of the autolinking ones which pull in
+* Air Up B 1st hit knockback adjusted (angle: 85 > 366, bkb: 50 > 60, kbg: 10 > 0), the multihit hitboxes are now air-only, there are now ground-only duplicates with a different angle (367 > 366), final hit knockback adjusted (bkb: 72 > 100, angle: 361 > 55), distance buffed to match Smash 4, and DK is now intangible f3-6
+* For both versions of Up B, the flex pose has less endlag (FAF: 42 > 30)
+* Air Down B 1st hit angle adjusted (90 > 366), and the 2nd hit is bigger (size: 8.0 > 9.0)
+* DK’s arms are now intangible during Shield release
+* Both of DK’s tie hurtboxes have been removed
+
+
+Link
+In the transition between 4 and Ult, Link got a bunch of fancy new tools but also some nerfs that felt unnecessary at best and unintentional at worst. Most of the changes I made here just result in Link feeling more or less the same but with a more consistent neutral. That said, I made a few other changes to Link’s core moveset in order to give him a bit more inspiration from BotW.
+
+
+* FTilt blindspot fixed
+* Up Tilt blindspot fixed
+* DTilt can now spike aerial opponents, has a bigger hitbox (size: 2.0 > 2.5), and has less endlag (FAF: 31 > 29)
+* Up Smash fallouts fixed, hits 2 and 3 each have 2 more active frames
+* Down Smash is now Link’s Ground Spin Attack, and when fully charged it will use Urbosa’s Fury, creating a giant electric hitbox around Link (Note: Not currently implemented)
+* Nair has a smaller hitbox (size: 5.0/4.5 > 4.0/3.5)
+* Fair 1 has 6 more frames of hitstun, angle adjusted (ID 5: 38 > 367), fallouts fixed
+* If Link is pushed offstage during Ground Up B, it will cancel into regular fall (Note: Temporary change; after the below change is implemented, this will be obsolete)
+* Ground Up B now uses Revali’s Gale before pulling out his glider. After pulling it out, he can put it away and take it out again by pressing Up B, and it will have a hitbox when pulling it out. He can act out of the move after pulling out the glider, but cannot Up B again. The move does not have a hitbox on the way up unless it’s fully charged. (Note: Not currently implemented)
+* If Link is pushed offstage during Ground Up B, he will go into regular fall instead of free fall (Note: This change will be removed once Up B’s rework is implemented)
+* Bombs deal 1% more damage when they explode
+
+
+
+
+
+
+Samus and Dark Samus
+(Shared Changes)
+With Samus and Dark Samus, the goal was to make them better at using the kit they’re given, but the kit itself was pretty good so I mostly stuck to fixes.
+* Jab 1 can be canceled into Jab 2 earlier (cancel window: f15 > 9)
+* Up Smash fallouts fixed
+* Fair animates faster between the hits and now autocancels in a shorthop
+* Up Air fallouts fixed
+* Up B fallouts fixed
+
+
+
+
+
+
+Samus
+(Differences from Dark Samus)
+In separating Samus and Dark Samus, my goal was to make Samus more aggressive, to match the pace of the 2D Metroid games, while Dark Samus is more defensive, matching the more methodical feel of the Prime series where she originates. That said, Samus still isn’t limited to holding forward, she’s just a little better at playing in your face, and a little worse with her zoning.
+
+
+* Jab 1 shieldstun increased (advantage: -10 > -4)
+* Dash Attack has its Smash 4 stats back (kbg: 90 > 60, normal hit damage: 10.0 > 7.0, angle: 55 > 75, FAF: 42 > 34)
+* Samus has a new Up Tilt, based off of the Melee Counter from Metroid: Samus Returns
+* Up Air no longer has a negative hitstun modifier
+* Charge Shot has its Smash 4 stats back (FAF: 45 > 54, shield damage: -2.5/-7 > 0)
+* Super Missiles move faster (x speed: 4.2 > 6), start moving later (frame: 26 > 35), have a higher usage limit (1 > 2), and have more hitlag (multiplier: 1 > 1.2)
+* Bombs explode slightly faster and provide more grounded momentum, FAF decreased (49 > 40), but no longer explode on contact
+* Dash Speed increased (1.87 > 1.98)
+* Run Speed increased (1.654 > 1.74)
+* Fall Speed increased (1.33 > 1.4)
+* Fastfall Speed increased (2.168 > 2.24)
+
+
+Dark Samus
+(Differences from Samus)
+I already described my reasoning for how I distinguished Samus and Dark Samus, so for this section I just wanted to add that zoners are evil and toxic, just like Dark Samus in Metroid Prime, so it’s fitting :^)
+
+
+* Fair’s hitlag is no longer compensated, making it easier to SDI out of due to its electric properties
+* Supermissiles have less hitlag (multiplier: 1 > 0.8) and start moving sooner (frame: 26 > 10)
+* Homing Missiles have less endlag (FAF: 55/60 > 50), better homing capability (h_angle: 0.65 > 1.2, h_anglemax: 70 > 90), move faster (x speed: 1.15 > 1.2) and deal more damage (8.0 > 11.0)
+* Drift after bombs increased (1.0 > 1.2)
+* Walk Speed increased (1.115 > 1.2)
+* Gravity decreased (0.075 > 0.07)
+* Fall Speed decreased (1.33 > 1.2)
+* Fastfall speed decreased (2.168 > 1.92)
+
+
+Yoshi
+Yoshi’s fine, just needs some minor adjustments and adding Egg Roll.
+
+
+* The back hit of Nair’s early hit deals less knockback (bkb: 40 > 35, kbg: 86 > 80)
+* Up Tilt has a hitbox on frame 7 that deals more damage and knockback (damage: 7.0 > 9.0, kbg: 45 > 65)
+* Egg Roll no longer bounces when it starts on the ground, and the move can be canceled into the ending animation by hitting Shield in the air
+
+
+Kirby
+Kirby’s buttons are pretty good, but he’s held back a lot by his lacking mobility, especially in the air. I didn’t want to increase it too much because Kirby could very easily snowball into being broken, but Kirby still needs SOME extra speed to have a neutral presence. Beyond that, most of his other buffs are focused on improving his advantage and disadvantage since speed was all his neutral really needed.
+
+
+* Jab fallouts fixed
+* DTilt has 3 more frames of hitstun
+* Fair fallouts fixed, changes from 8.0.0 reverted, and the move has more endlag (FAF: 48 > 51)
+* Dair fallouts fixed, the move has less startup (18 > 15), 4 extra frames of hitstun, and 2 extra frames of shieldstun (advantage: -12 > -10)
+* Inhale has less endlag after eating a projectile (FAF: 52 > 20)
+* Hammer Flip starts charging sooner (frame 15 > 10)
+* Final Cutter comes out faster (startup: 24 > 14)
+* Stone hits twice on Shield
+* Forward Throw doesn’t cause Kirby to jump as high, notably no longer bounces above the Battlefield platforms
+* Up Throw deals more knockback (kbg: 74 > 80)
+* Dash Speed increased (1.9 > 2.05)
+* Run Speed increased (1.727 > 1.85)
+* Air Speed increased (0.84 > 0.93)
+
+
+Fox
+I like the changes to Fox overall in Ult, but some of his changes definitely make his vortex less flashy than in previous games, which I wanted to address. Nair is still a great move for tech chasing, but late Nair > Up Smash not working as well makes his kill confirming feel less linear. Despite that, Fox is just as scary to fight because of combos out of Dair, and Side B’s changes give him a cool movement option without necessarily buffing his recovery. Side B also contrasts well with Falco’s 8.0 buffs. These changes don’t affect his viability as much as just making him cooler.
+
+
+* DTilt hits below ledges better
+* Late Nair has more kbg (100 > 110) and both of its hitboxes have a lower angle (361 > 35)
+* Up Air fallouts fixed
+* Dair fallouts fixed*, the move has less landing lag (17 > 12), always sends forward, and the launcher sends at a higher angle (60 > 70)
+* Air Side B travels less distance (brake speed: 2.3 > 1.5) but has the same FAF as the ground version (73 > 56)
+* Dash Speed increased (2.09 > 2.4)
+*Fox falls faster than the maximum speed an autolink angle can force you to move at, so it will consistently have issues linking while fastfalling if the opponent isn’t already below you. I’m ok with this since if it DID link properly in that situation, Fox would have a true 0 > death off of a rising multihit aerial.
+
+
+Pikachu
+This was the hardest character to nerf in my opinion. I generally try to only focus on removing unfair options instead of anything that’s considered good, but I also try not to remove options that are key to a character’s identity. In Pika’s case though, those two rules directly conflict with each other, since the main options that make Pika good are all unfair in some way. In nerfing Pika I tried to keep its strong options but tone them down to be more reasonable. TJolt has all of the same benefits, but now it only gets one of them. Pika can still pancake with aerials, but now it has to stand up before he can act out of landing lag. Pika can still combo out of Bair and Up Air but now it has to fastfall the Bair and make it less safe, and Up Air tumbles so you can DI the move. Also, Pikachu is bigger, because before it was smaller than Pichu.
+
+
+* Jab deals 5 more frames of hitstun, and if the move connects and you continue to hold A, it will cancel into a weaker version of Dash Attack (sweetspot damage: 11.0 > 9.0, sourspot angle: 70 > 60)
+* Nair, Fair, Bair and Dair have to finish their landing lag animations before Pikachu can act out of them, and Pikachu stands up earlier during all of those animations
+* Fair fallouts fixed
+* Bair landing lag decreased (18 > 12) and the move no longer autocancels in a shorthop
+* Up Air has 1 extra sweetspot frame (animation lengthened), 2 extra sourspot frames (the hitboxes clear later in the animation), endlag decreased (FAF: 27 > 28 but 2 more active frames), the early hit no longer has a sourspot (damage: 5.0 > 6.0), late hit stats increased (damage: 4.0 > 5.0, bkb: 40 > 50, kbg: 80 > 90), the move uses set weight, and has less landing lag (14 > 10)
+* Dair deals more knockback (bkb: 16 > 20, kbg: 84 > 86) and has a bigger hitbox (size: 5.5 > 5.7) but no longer spikes (angle: 270 > 361)
+* Only 1 Thunder Jolt can be on screen at a time
+* Model scaling increased (0.96 > 1)
+
+
+Luigi
+Luigi just kinda disappoints me honestly. Luigi’s always been a cheesy character, but cheesy in the sense that his options are frustrating but also conceptually really funny. Melee Luigi inexplicably had a ridiculous wavedash while 4 Luigi weaponized fallouts, and both of these designs are healthier and more entertaining than a bad character who has a 0 > death that takes 8 minutes to learn on a joycon. To fix this, I made some changes to remove his 0 > death but buff all of his other combos. Part of this involved giving Luigi back his Melee Nair, funnily enough. That said, this still doesn’t feel like Luigi, it just feels balanced. To fix THAT, I lowered his traction back to where it was in Smash 4, giving him back his wavedash, which is very funny because soap loggi. THAT creates a problem of taking away his dash dance, but since DTilt cancels momentum, I fixed it by letting him act out of DTilt during the startup. Overall this Luigi is more fun to play both as and against. Also, Luigi’s recovery needs some work, and since Nair’s been restored to its former glory, I think giving up Cyclone’s invincibility for more vertical gain is a fair trade.
+
+
+* DTilt can be canceled out of on frames 1-4
+* Nair stats adjusted (damage: 12.0/6.0 > 15.0/8.0, bkb: 20 > 40, kbg: 90 > 80, late hit angle: 80 > 90)
+* Fair damage increased (8.0 > 12.75), kbg increased (80 > 100)
+* Dair has its ground spike back, damage increased (10.0 > 11.0)
+* Luigi’s wall-stuck animation ends faster (41 > 15)
+* Up B bkb decreased (88/80 > 77/66)
+* Grounded Cyclone is now invincible starting on frame 1
+* Air Cyclone rises more when mashing if the move hasn’t connected, and loses its invincibility
+* Traction decreased (0.096 > 0.024)
+* Down Taunt reaches below ledge more consistently
+
+
+Ness
+I can’t think of anything that Ness really needs, so uh…
+
+
+* Fair fallouts fixed
+* Up Air fallouts fixed
+
+
+Captain Falcon
+I honestly think Falcon’s design is pretty close to perfect on paper. His buttons are good, but they aren’t great at winning direct exchanges so he doesn’t have an answer to people just pressing buttons besides dash dancing to whiff punish, Up Tilt’s intangibility to antiair or Raptor Boost’s heavy armor as a zonebreaker. That said, none of those options actually work, so Falcon’s changes are more fixes than anything else. There are a few actual buffs but those are mostly just QoL and generally shouldn’t change his gameplan. Up Air hitting on frame 6 but only vs. aerial opponents for example makes it better as an antiair but it still doesn’t scoop on the ground because Nair 1 already has that covered.
+* Jab 2 hitbox sizes increased (2.5/3.0/3.6 > 4.0/4.5/5.1)
+* Jab 3 comes out faster (startup: 6 > 3), hitbox sizes increased (5.5/3.8 > 7.0/5.3)
+* Up Tilt’s intangibility now covers both arms and starts on frame 1, and the air hitbox is the same size as the ground one
+* Forward and Down Angled FSmash have more range (animation edit)
+* Up Smash fallouts fixed, knockback buffs from 8.0.0 reverted
+* Nair fallouts fixed
+* Up Air comes out faster vs. aerial opponents (startup: 7 > 6)
+* Raptor Boost no longer loses collision, now has hand intangibility while moving, the hit comes out on frame 4, is larger (arm hitbox size: 6.0 > 8.5), slides slightly forward and no longer activates on items, angle adjusted (85 > 74)
+* Aerial Raptor Boost snaps to ledge consistently
+* A successful Falcon Dive can now be canceled into a wall jump
+* Ground Falcon Kick can be edge canceled
+* Aerial Falcon Kick can be reversed
+* FThrow angle adjusted (45 > 35)
+* Dash Speed increased (1.98 > 2.255)
+
+
+Jigglypuff
+Puff is just air weaving, the character tbh. I wanted to make her zoning slightly better but still have her get punished if people get in, so Bair doesn’t turn around but overall Puff is really similar. Rollout’s ability to be jump canceled and generally being a better move gives her another strong option to threaten with as well. As for Up Throw, idk I think Up Throw > Rest being true at like 140 wouldn’t make her broken or anything as long as it can’t be used to take some super early stocks.
+
+
+* Turnaround Bair is gone
+* Rollout can be jump canceled while charging, charges faster, maintains its hitbox while turning, and can be acted out of when it connects
+* Sing active frames increased (27-36/61-70/100-115 > 23-45/57-83/97-125), matching the window where Jigglypuff’s mouth is open
+* Up Throw knockback adjusted (bkb: 130 > 160, kbg: 30 > -50) causing it to deal less knockback as % rises
+
+
+Peach
+Peach is pretty well designed in my opinion, but I think being able to do a rising aerial, land on the next frame AND not get the shorthop multiplier for it is a little dumb. That said, like I mentioned in the Pikachu section, I don’t want to take away strengths that define a character’s kit, so the only change I made to float was to apply the shorthop aerial multiplier to it. Dair was nerfed because an aerial’s endlag shouldn’t match its landing lag, but you can still combo off of it so it’s not like I killed the move. Beyond that, everything else is either QoL or meant to distinguish Daisy.
+
+
+* DTilt now uses its animation from Smash 4, but otherwise acts the same
+* Dair has 4 more frames of endlag
+* Peach’s landing animations need to complete before she can act out of them
+* Neutral B’s spores can no longer be reflected or absorbed 
+* Peach Bomber kbg reduced (73 > 66)
+* Float aerials now use the shorthop aerial multiplier
+
+
+Daisy
+Daisy is, in my opinion, the biggest case of wasted potential of all of the Echo Fighters, so she’s getting a ton of changes from Peach and honestly fits into a different archetype altogether. In reimagining her, I tried to keep her emphasis on technical inputs for both movement and combos, but with a more aggressive and feisty personality. A lot of the characters I used for inspiration tended to be fastfallers, so she takes a lot of ideas from characters like Falcon. My other goal with Daisy was to see how far you could push a kit like Peach’s if she didn’t have float. While removing float, I accidentally made it so float lasted for only one frame, which allowed her to instantly fastfall whenever you did a float input. Since that already fit in with the design I wanted, I kept it. With that in mind, the other changes are all pretty much self-explanatory but I wanted to clarify that since Daisy no longer has the ability to do a rising aerial and land on the next frame, unlike Peach she doesn’t need the shorthop multiplier to be balanced.
+
+
+* FTilt has less active frames, but comes out faster (active: 7-10 > 6-8) and the late hit has adjusted stats (damage: 6.0 > 13.0, bkb: 40 > 50)
+* Daisy has her Melee Up Tilt back, which is stronger and has more horizontal range but less vertical range
+* DTilt angle adjusted (275/80 > 70), ground kbg decreased (105 > 75)
+* Nair now hits twice (active frames: 5-19 > 5-8/14-19), the 1st hit now combos into the new hit instead of launching (damage: 13.0 > 8.0, angle: 361 > 68/367, kbg: 90 > 50/25, bkb: 20 > 65/50), while the 2nd hit launches (damage: 8.0, angle: 361, kbg: 80, bkb: 50), but both hits are less safe on shield than the early hit (advantage: -2 > -4)
+* Daisy now has the Melee/Brawl Up Air, which comes out faster (startup: 10 > 8), deals more damage (total damage: 10.0 > 14.0/12.0/11.0) and is a better juggling tool, but can no longer dragdown
+* Dair deals more damage (2.0/2.0/2.0/5.0 > 3.0/3.0/3.0/6.0) and always sends forward
+* Neutral B’s spores can no longer be reflected or absorbed
+* Daisy Bomber deals more knockback (kbg: 73 > 80) but has more startup (13 > 16/26)
+* Up B travels significantly more distance but Daisy will no longer pull out her parasol while falling, and the move is only one hit with sweetspots at the beginning and the end
+* Turnips reverted to prepatch values (bkb: 25 > 30, kbg: 45 > 35)
+* Dash Speed increased (1.826 > 2.0)
+* Run Speed increased (1.595 > 1.75)
+* Fall Speed increased (1.19 > 1.3)
+* Fastfall Speed increased (1.904 > 2.08)
+* Daisy no longer has the ability to float
+* Performing a float input will cause Daisy to fastfall whether or not she has reached the apex of her jump. While Peach can also do this, Daisy’s higher fastfall speed lets her land faster using this “floatfall”
+
+
+Bowser
+Bowser’s design doesn’t really need changes, but his command grab has been balanced around the new mechanics.
+
+
+* DTilt angle adjusted (361 > 34)
+* Grab is faster (startup: 8 > 6)
+* Side B is slower (startup: 6 > 8)
+
+
+Ice Climbers
+In buffing Icies I was mostly focused on QoL since their kit is pretty scary when it works. I wasn’t sure how to fix Up B breaking if Nana hits someone, so I just put the hitbox on Popo instead so Nana can’t hit anyone. 
+
+
+* Fair is active longer (f19-20 > f19-21)
+* Bair has less endlag (FAF: 36 > 34)
+* Side B can snap to ledge at any point during the animation
+* Up B deals more damage (16.0 > 20.0, and Popo is invincible while jumping, but the move is now attached to Popo instead of Nana and therefore comes out slower (startup: 16 > 32)
+* Nana now takes the same amount of damage as Popo
+* Nana IQ increased (77 > 100)
+
+
+Sheik
+Sheik has the potential to be REALLY good so I don’t want to change too much, but I think her damage output can afford to be raised slightly, but only to Smash 4 levels (most moves only get about 0.5% more damage). Beyond that, everything is just QoL.
+
+
+* Up Tilt deals more damage (3.0/4.0 > 5.0/6.0)
+* DTilt deals more damage (4.5 > 5.0)
+* FSmash fallouts fixed
+* DSmash fallouts fixed
+* Nair has a bigger hitbox (early hit ID 2 size: 3.0 > 3.7, late hit sizes: 3.4/2.7/1.5 > 3.7/3.0/3.7) 
+* Fair deals more damage (3.8/4.5 > 4.3/5.0) and lasts longer (f5-7 > f5-8)
+* Bouncing Fish has a bigger hitbox (3.5/3.0 > 6.0/4.0) and she can use it again if she’s hit out of it
+
+
+
+
+Zelda
+Zelda’s tool kit is pretty good, but too much of it is focused around Phantom, so all of the changes just serve to make her slightly better at controlling space. That said, Phantom also got a buff to how it charges, so you can act while it’s charging, but doing this takes away your ability to do a manual release, because Phantom Displacement seemed like an unhealthy buff that I couldn’t implement even if I wanted to.
+
+
+* DTilt range increased (z offsets: 2.5/5.0/7.5 > 2.5/5.5/8.5), angle adjusted (62 > 80)
+* The aerial hits of Nair now use an autolink angle
+* Fair has less endlag (FAF: 50 > 46)
+* Bair autocancels earlier (45 > 36)
+* Side B lingers in place after the player lets go of B, and it won’t explode until either 20 seconds have passed, or the player uses Side B again
+* Phantom can now be Shield canceled during its charge, but doing so will make it impossible to manually release it
+* Dash Speed increased (1.958 > 2.0)
+
+
+Dr. Mario
+Doc being slower than Mario makes perfect sense, but that doesn’t mean he should be slower than everyone else as well. The buffs to his mobility cover up his main flaws so he doesn’t really need that much beyond that, but his recovery also needs some work. I’m not giving him much, but reducing the endlag of Tornado makes it a much more effective recovery option, and being able to walljump out of Up B gives him a situational but still viable mixup that’s also a nice callback to Melee Mario.
+
+
+* Up Smash bkb increased (0 > 30)
+* Dr. Mario can cancel his Up B into a wall jump, and can turn it around after the move hits (turn frame: 3 > 6)
+* Tornado has less endlag (FAF: 75 > 60) and less kbg (154 > 130)
+* Run Speed increased (1.397 > 1.619)
+* Air Speed increased (0.92 > 1.02)
+
+
+Pichu
+I think Pichu is pretty well designed, but as someone who had a Pichu in Melee, I actually think there are some things I liked better about that version, and while Pichu is a pretty good glass cannon, I think there are some situations where he doesn’t feel as rewarded. These changes mostly serve to slightly increase both the glass and the cannon aspect of his design.
+
+
+* Pichu has prepatch FTilt back (kbg: 130 > 150), but the move no longer hits below ledge
+* Up Smash has its Melee kill power back (bkb: 40/15 > 50/40, kbg: 85 > 105, damage: 14.0 > 16.0)
+* Nair has its Melee stats back (damage: 7.0/5.0 > 12.0/9.0, bkb: 20/0 > 18/0, kbg: 112 > 100) and a higher angle on grounded opponents (361 > 45)
+* Bair can no longer be SDId
+* When TJolt is used in the air, Pichu will have less endlag whether or not it lands (FAF: 52 > 40)
+* Agility has less landing lag (24 > 16) and less self damage on the first use (0.9 > 0.5) but more self damage on the second use (1.4 > 3.5)
+
+
+Falco
+Falco is mostly held back by some moves that just don’t work, but even for some of the ones that DO work, some of his kit just… doesn’t feel like Falco. In his changes, I mostly gave him back some of his tools from Melee Falco but toned down, and buffed falling Up Air to make him more stylish.
+
+
+* Up Tilt fallouts fixed
+* DTilt has less endlag (FAF: 30 > 28), the sweetspot is now at the tip of his tail instead of the base, angle reverted to pre-8.0.0 (85 > 75)
+* Up Smash reaches lower, fallouts fixed
+* Nair fallouts fixed, changes from 8.0.0 reverted
+* Fair fallouts fixed
+* Up Air has more active frames (7-11 > 6-12)
+* Dair comes out faster (startup: 10 > 9)
+* Falco can fastfall during lasers, and when he lands during lasers, the rest of the animation plays at 1.5x the normal speed
+* Back and Up Throw laser hitbox sizes reduced (9.6 > 3.2), but they deal 6% more damage and can now be angled
+
+
+Marth
+So originally my approach was just to give Marth and Lucina back their old hitboxes on Fair and Bair, but Nintendo did that themselves and it turned out not to be enough, so my changes now serve to give Marth better confirms into his tippers. Landing tipper Jab 2 now has followups similar to Smash 4 Jab 1, while landing sourspot Jab 2 leads to tech chases.
+
+
+* Jab 1 hitboxes significantly adjusted so that landing tipper Jab 1 will more consistently result in landing tipper Jab 2
+* Jab 2 tipper damage and knockback adjusted (damage: 6.0 > 5.0, angle: 45 > 78, kbg: 75 > 30, bkb: 62 > 55), the middle hitbox has the same properties as the tipper, sourspot damage and knockback adjusted (damage: 4.0 > 3.0, angle: 45 > 30, kbg: 75 > 70, bkb: 62 > 55), and the move has less endlag (FAF: 29 > 26)
+* Up Smash fallouts fixed
+* Up Air has more active frames (5-9 > 5-12)
+* Up Throw has its Smash 4 kill power back (damage: 5.0 > 4.0, kbg: 102 > 120)
+
+
+Lucina
+Lucina gets all of the buffs Marth gets that don’t involve tippers + is slightly more unique.
+
+
+* Up Air has more active frames (5-9 > 5-12)
+* Neutral B deals less Shield Damage (25/50 > 0) and damage (8.5/23.0 > 6.5/15.0) but gives Lucina a horizontal boost
+* Up Smash fallouts fixed
+* Up Throw has its Smash 4 kill power back (damage: 5.0 > 4.0, kbg: 102 > 120)
+
+
+Young Link
+Young Link is already pretty good, but that’s not an excuse for moves not to work properly. All of his changes are fixes.
+
+
+* Up Smash fallouts fixed
+* Fair fallouts fixed
+* Bair fallouts fixed
+* Up B fallouts fixed
+* Down Taunt animates 3x slower
+
+
+Ganondorf
+Ganon’s punish game is really good, but everything else about him is kinda bad. Most notably he struggles to get in because he’s slow and doesn’t have good ways around projectiles, his shield pressure isn’t good despite being a heavy, and his recovery is bad because you can tech it and punish him on hit and he can’t do anything about it. To fix the pressure issue I increased the combo potential from Jab, one of his only safe moves, so that you can dash cancel it on hit. The move is exactly +7 on hit after dashing, which allows you to spotdodge and avoid Jab > FTilt/DTilt, but Up Tilt is now better designed to catch it, so Ganon can very easily condition you to panic after Jab. Down B has foot invincibility for part of the animation, so with proper timing it can go through projectiles.
+
+
+* Jab can be dash canceled on hit
+* FTilt hitbox size increased (4.8/5.0/5.5 > 5.1/5.3/5.5), and the move now has sweetspot priority
+* Up Tilt has been replaced with Smash 4 Up Smash
+* DTilt has less endlag (FAF: 36 > 31), but with shieldstun compensated (advantage: -12 > -12), and its Smash 4 angles (60/70/80 > 80/70/60)
+* FSmash interpolation fixed, the move has one more active frame and one more FAF (endlag unchanged)
+* Up Smash blindspot fixed
+* DSmash fallouts fixed
+* Nair fallouts fixed, ground Nair 1 acts like Falcon Nair 1
+* Up Air has more active frames (8-16 > 7-18)
+* Neutral B comes out faster (startup: 70 > 58)
+* Up B blindspot fixed
+* Ground Down B has invincibility on Ganondorf’s foot while the hitboxes are active, now has a hand hitbox that deals 2% less damage
+* Aerial Down B can be turned around
+* Successful parries reflect projectiles
+
+
+Mewtwo
+When buffing Mewtwo, the first change is obviously fixing the tail hurtbox. Beyond that though, I figured Mewtwo didn’t have much of a reason to be played over someone like Palutena, who has a fairly similar kit, so I wanted to give him a cool new neutral tool. I ended up going with teleport canceling since it gave Mewtwo more of that psychic monster feel. That said, an ability like that is extremely powerful, so I tried to limit it by making it so Mewtwo was punished for incorrectly using teleport. After that, everything else is just QoL.
+
+
+* Up Smash fallouts fixed, and the move has less endlag (FAF: 69 > 64)
+* DSmash has more endlag (FAF: 43 > 48)
+* Confusion no longer halts Mewtwo’s momentum
+* Teleport has less endlag (FAF: 25 > 17) unless a grounded option is buffered out of it (FAF: 25 > 29), and the move no longer puts you in free fall, but if you whiff an aerial after using it, there will be a penalty (Nair: 0.6% self damage per hit + double endlag, Fair: double endlag, Bair: triple endlag, Up Air: double endlag, Dair: free fall)
+* Mewtwo’s outer tail hurtbox is gone
+* Mewtwo’s Neutral Airdodge works like the Airdodges in Rivals of Aether, with the same frame data as its Directional Airdodge
+
+
+
+
+Roy
+Roy is honestly fine, I’m just making him a bit cooler and making a couple QoL adjustments.
+
+
+* Medium FTilt is gone
+* Up Tilt now uses Up Smash’s animation. Compared to vanilla Up Smash, the launcher deals less damage and knockback (damage: 10.0 > 7.0, bkb: 70 > 60, kbg: 90 > 60), but the move has less endlag (FAF: 59 > 42)
+* FSmash’s sweetspot now has fire effects on hit
+* Up Smash now uses Up Tilt’s animation. Compared to vanilla Up Tilt, the move comes out slower (startup: 6 > 15) but deals more damage and knockback (damage: 12.0 > 15.0, bkb: 35/30 > 65/60)
+* Double Edge Dance Up 2 and Up 3 use an autolink angle, making it possible to link into Forward 4 in the air, grounded Forward 4 kbg decreased (123/105 > 100/85), grounded Up 4 has less endlag (FAF: 45 > 37)
+* Up B deals more knockback (kbg: 100 > 115)
+* FThrow has less endlag (FAF: 32 > 31)
+
+
+Chrom
+Chrom is even more honestly fine so he needs even less.
+
+
+* Dash Attack is now a completely different move using the animation of one of Chrom’s victory animations, coming out slower (startup: 13 > 23) but having adjusted knockback (angle: 52 > 90, bkb: 65 > 40) and less endlag (FAF: 46 > 49)
+* Up B fallouts fixed, but the multihits have a smaller hitbox (size: 9.0 > 8.0)
+* FThrow has less endlag (FAF: 32 > 31)
+
+
+Mr. Game & Watch
+GW is extremely annoying to fight, but he isn’t by any means broken. In changing him, I toned down his safe Smashes, letting Up Smash still be safe on shield but not on whiff, and Up B is slightly slower but still very good. As for how to compensate for potentially nerfing him too hard… funny windboxes
+
+
+* Up Tilt comes out faster (startup: 10 > 7)
+* DTilt has its old windbox back, less endlag (FAF: 43 > 37), and the regular hitbox now connects on aerial opponents
+* Up Smash has 13 more frames of endlag (FAF: 39 > 52) and shieldstun (advantage: -6 > -6), and the hitbox only covers his head
+* DSmash has more endlag (FAF: 38 > 44) and it’s more difficult to land the bury hitbox
+* Nair has more landing lag (7 > 9), fallouts fixed
+* Fair’s Bomb will explode when it gets hit if it was hit after frame 13
+* Judge 2 now has a 20% trip chance
+* Judge 9 can no longer be SDId
+* Up B is now frame 5, with its old windbox being active frames 3-5, and it has smaller hitboxes (6.0 > 5.0)
+
+
+Meta-Knight
+Meta-Knight’s transition from 4 to Ultimate was kinda awkward. He was mostly buffed, but the few nerfs he did get were to the most important aspects of his combo game. I think Up Air’s angle change was pretty healthy since it makes MK players have to work harder to extend their combos, but I don’t think he should struggle as hard as he does to START the combos, so his main combo starters are better. Even then though, for an aerial swordfighter, MK really doesn’t feel like he has a sword, so all of his aerials now match their animations. 
+
+
+* DTilt has 3 more frames of hitstun
+* Dash Attack has less endlag (FAF: 33 > 32)
+* Nair’s hitbox matches the animation
+* Fair’s hitbox matches the animation, fallouts fixed, and all grounded hits on Fair 1 and 2 angle adjusted (70 > 60)
+* Bair’s hitbox matches the animation, kbg increased (198 > 212), 8.0.0 adjustments reverted
+* Up Air’s hitbox matches the animation
+* Dair’s hitbox matches the animation
+* Up Throw damage increased (10 > 12)
+
+
+Pit and Dark Pit
+(Shared Changes)
+The Pits are well rounded and fairly honest characters when they function properly, so all I really did was fix their moves.
+
+
+* Up Tilt fallouts fixed
+* FSmash fallouts fixed
+* Up Smash fallouts fixed
+* Nair hitbox size increased (3.0/2.5 > 4.5), angles adjusted (48/335/220/140/130 > 367)
+* Up Air fallouts fixed
+
+
+Pit
+(Differences from Dark Pit)
+Pit only has one unique change. Originally this change was actually a fix that both Pits got, but you’ll see why Dark Pit didn’t get this pretty soon.
+
+
+* Fair has more range (size: 2.3 > 2.5, z1: 10.0/11.0 > 6.0, z2: 19.0 > 21.5)
+
+
+
+
+Dark Pit
+(Differences from Pit)
+Here’s where things get more interesting. Just to clarify, Pit himself doesn’t have any unique changes, all of them come from Dark Pit. Anyway, for Dark Pit, originally I just wanted to give Dark Pit slightly different specials that allowed him to be more aggressive with his Up and Down B, but then people started suggesting that Dark Pit use his staff more, and I realized there were a lot of cool ideas I could mess with if Dark Pit used a staff, so here we are. 
+
+
+* All double jumps now grant the same height
+* FTilt now uses a staff, range increased (z: 14.0 > 20.0), and the move only has one hitbox that deals 9% instead of a sweetspot and sourspot dealing 10% and 7% respectively
+* DTilt now uses a staff (Hitboxes unchanged)
+* Dash Attack now uses a staff if it is his currently held weapon (Hitboxes unchanged)
+* Nair now uses a staff (Hitboxes unchanged)
+* Fair now uses a staff, is now a single hit move with a tipper and more range (Sourspot range is the same as Pit’s Fair, tipper z: n/a > 24.0) and kill power (Final hit damage: 6.0 > 8.5/12.5, kbg: 147 > 100) but less total damage on the sourspot (11.0 > 8.5)
+* Up Air now uses a staff (Hitboxes unchanged)
+* Dark Pit can act out of Up B, but the move travels less distance
+* Dark Pit Down B no longer works as a Shield, but it now has a hitbox similar to Melee Shine (active frames: 7-12, damage: 3.0)
+
+
+Zero Suit Samus
+ZSS is in a really good spot, but I feel like she should be allowed to have more strings even if they aren’t necessarily true. I shaved off some of DThrow’s endlag, albeit not to the point of giving her a Smash 4 combo game, and I changed DTilt to combo into things like Fair and Bair for longer, while nerfing Nair in exchange. Other than that, ZSS has a surprising number of moves that don’t work for a top tier, so I fixed that.
+
+
+* Jab 3 hitbox size increased (4.0/3.5 > 5.0/4.5)
+* DTilt knockback adjusted (bkb: 60 > 70, kbg: 85 > 75)
+* Up Smash fallouts fixed
+* Nair has more landing lag (6 > 8)
+* Fair fallouts fixed
+* Side B fallouts fixed
+* Down B intangibility now starts later (intangibility: 3 > 5), but you get it back when you’re hit out of it, and the move is better at connecting upon a successful flipstool
+* DThrow has less endlag (FAF: 52 > 50)
+
+
+Wario
+Wario’s design isn’t nearly as bad as a lot of people make it seem. The only main issues I have are the absurd combo potential of Up Tilt, and the kill power of half Waft. Keyword: half; Full Waft isn’t a problem because of how long it takes to get, but just to be safe, I made it a bit longer. As for Up Tilt, it’s retooled to be a more traditional antiair, regaining its old intangibility but having more damage and knockback so while it combos into Up Air, it no longer leads into itself more than once or twice. To compensate for his nerfs, Jab acts as a combo starter, and the Bike timer is gone, adding to Wario’s mobility and recovery (though note that he still has to get hit to use Bike again). 
+
+
+* Jab 1 is bigger (2.2/2.8 > 3.2/3.8), and links better into Jab 2 (far hit angle: 361 > 180)
+* Jab 2 has less endlag (FAF: 34 > 22)
+* Up Tilt covers more of Wario’s arm, no longer has a sourspot and regains its intangibility and pre-11.0 active frames, but it no longer covers his chest, and it deals more damage and knockback (damage: 6.0/5.0 > 8.0, bkb: 28 > 48)
+* Nair 2 has a bigger hitbox, now matching Nair 1’s belly hitbox
+* Side B no longer has a timer for when you can use it again
+* Waft takes 10 more seconds to fully charge, and Half Waft deals less damage (20.0 > 17.0), but the startup nerf on Full Waft has been reverted
+
+
+Snake
+Snake is pretty well designed. He takes a different mentality to fight against but I would argue that isn’t necessarily a bad thing. What IS a bad thing is how Nikita can invalidate recoveries, so that’s a little weaker and harder to control. The fact that Snake has the ability to restore the hitbox after hitting it seems counterintuitive, but considering it’s now easier to move around, hitting it is no longer the only option. Besides that, I took away Dash Attack’s intangibility because it actually doesn’t actually make the move much worse and people wouldn’t leave me alone about it. Up Tilt can stay though, spotdodge canceling is gone and that was the main thing that made the move stupid.
+
+
+* FTilt can be canceled into hit 2 earlier (cancel window: f10 > 8), and the move has 2 more frames of hitstun (modifier: 2 > 4)
+* Dash Attack no longer has intangibility
+* Dair fallouts fixed
+* All versions of Nikita deal 1% less damage and it moves slightly slower (move speed: 2 > 1.8, turn speed: 0.9 > 0.7, rotation speed limit: 4.5 > 4.3)
+* Pivot Grab has 1 more frame of startup, matching all other pivot grabs 
+
+
+Ike
+Ike’s design feels pretty underwhelming to me. Most of his kit is too reliant on Nair, and while patches have sort of fixed this, he still needs a bit more incentive to use the rest of his kit. In the transition from Smash 4 to Ultimate, he also lost some of the strength on his sword that really makes him Ike, especially on Fair. In changing Ike, I gave him back some of his old power, but Nair leads to DI mixups instead of true kill confirms.
+
+
+* Up Tilt range increased (early hit x: 0.5 > 0.0, y: 13.5 > 13.0, z: -1.0 > 0.0, x2: 0.5 > 0.0, y2: 2.8 > 1.0, z2: -1.0 > 0.0, late hit y: 12.5 > 12.0, z: -2.0 > -1.0, y2: 4.0 > 1.0, z2: -2.0 > -1.0)
+* DTilt hitbox size increased (size: 3.4 > 3.8, x: -1.0/-0.3/0.7/1.5 > 0.0, y: 1.0/4.0/7.0/10.0 > 0.0/5.0/9.5/13.5, z: -4.0/-2.0/0.0/2.5 > -2.0)
+* Nair sends at a lower angle (80 > 74), kbg decreased (130 > 115)
+* Fair knockback adjusted (bkb: 55 > 30, kbg: 60 > 100), range increased (y: 9.4/6.2/3.0 > 12.0/7.5/3.0, z: 0.0 > -2.0), and the move autocancels earlier (autocancel window: 42+ > 36+), but it comes out slower (startup: 11 > 12), no longer reaching above Ike
+
+
+Pokémon Trainer
+I love PT’s design in this game, but it really bothers me that Charizard had to give up Rock Smash to get Pokémon Switch back, and I’ve always thought it would make more sense if you switched using Side Taunt, which would also let you move either forward or backward in the cycle.
+… I think you see where I’m going with this
+
+
+* Pokémon Switch is now mapped to Side Taunt, allowing you to move forward or backward in the cycle
+* As a result, all 3 Pokémon have a new Down B
+
+
+Squirtle
+Squirtle’s already a solid character, so the adjustments to its already existing moves are entirely fixing fallouts. As for Squirtle’s new move, I wanted to give it an option that covered a niche it couldn’t already do, but since Squirtle’s main struggle is kill power and giving Squirtle a strong kill option free of charge would be broken, I didn’t want it to be TOO practical to use, so I ended up going with Shell Smash. In the Pokémon games, Shell Smash lowers your defensive stats but raises your offensive ones. Buffing Squirtle’s speed and kill power would be stupid though, so here, Shell Smash is a giant explosion. It’s basically Waft, but after using it, you can’t use it again or switch for 15 seconds, and during that time Squirtle’s weight is cut in half, making it the lightest character in the game.
+
+
+* Bair fallouts fixed
+* Dair fallouts fixed
+* Squirtle’s Down B is now Shell Smash: It creates a strong explosion, but after using it, Squirtle’s weight is cut in half and you can’t use it or switch out for 15 seconds
+
+
+Ivysaur
+Ivysaur’s kit is fine. It has plenty of strong options but nothing that can’t be played around, not much to say there since nothing changed. ANYWAY let’s talk about Solar Beam. It’s a chargeable projectile similar to Thoron, but unlike Thoron, it’s active for WAY longer. It also kills stupid early, but it makes up for this by taking 5 seconds to charge. Once again, I wanted to give Ivysaur an option it doesn’t already have, in this case long range kill power, but have it not be too practical because this is Ivysaur we’re talking about.
+
+
+* Ivysau’s Down B is now Solar Beam: It’s literally just Ivysaur’s Final Smash, (albeit slightly weaker) but it takes 5 seconds to charge
+
+
+Charizard
+Charizard’s kit is pretty good, but unlike the other two, I actually do have some problems with its design. Notably, there’s literally a tip ingame that says its wings “won’t take damage” during Up Tilt, which is straight up a lie, so I fixed that to make Charizard’s antiair game better. Charizard is also designed to be the most durable of the 3, but its recovery has always felt worse than it needs to be, so I made Up B travel more distance. Charizard also kinda struggles to land, but that isn’t really an issue because it has Rock Smash back.
+
+
+* Up Tilt has wing intangibility and deals more knockback (kbg: 80/85 > 130)
+* Fair has slightly more range (sweetspot offset x: 6.0 > 7.5) and autocancels earlier (autocancel window: 35+ > 34+)
+* Up B travels more distance
+* Charizard’s “new” Down B is Rock Smash: It functions identically to Rock Smash from Smash 4
+
+
+Diddy Kong
+Diddy Kong mostly just gets QoL to be more of a funny monkey.
+
+
+* FTilt knockback adjusted (bkb: 60 > 10, kbg: 60 > 100, angle: 45 > 361)
+* DTilt sends at a higher angle (60/50 > 70/60)
+* FSmash fallouts fixed
+* Up Smash fallouts fixed
+* Bair has more kbg (102 > 112)
+* DThrow has less kbg (59 > 55)
+* Side B has less endlag (FAF: 48 > 44)
+* Up B’s maximum charge time is increased (60 > 90)
+* If you footstool a tripped opponent, they can act out of it immediately, removing Diddy’s postpatch pyramid scheme
+
+
+Lucas
+Lucas’s design is pretty good, so it mostly just needs some QoL changes. That said, I feel like giving him more ability to mix up PK Fire timing is nice so I buffed the startup and landing lag of specifically the air version. It’s universally easier to get in on projectiles because of the changes to Shields, so that won’t be super unbalanced or anything. 
+
+
+* Jab 1 hitbox size increased (1.4/1.6/1.8 > 2.4/2.6/2.8)
+* Jab 2 hitbox size increased (2.0/2.2 > 3.0/3.2), damage increased (1.5 > 2.5)
+* Jab 3 hitbox size increased (4.0/5.0 > 4.5/5.5)
+* Up Tilt has less endlag (FAF: 34 > 32)
+* DTilt has a new hitbox in between the current ones, with the same properties as the inner hit
+* Nair 3 has 2 more frames of shieldstun and autocancels earlier (autocancel window: 37 > 35)
+* Fair has less endlag (FAF: 42 > 38)
+* Bair initial autocancel window increased (1-2 > 1-8)
+* Dair fallouts fixed
+* Aerial PK Fire comes out faster (startup: 21 > 17) and has less landing lag (19 > 15)
+* PK Thunder 2 fallouts fixed
+* PSI Magnet has a higher maximum threshold (30 > 50) and can be released earlier (19 > 15)
+* DThrow has less endlag (FAF: 58 > 57)
+
+
+Sonic
+Let’s be honest, if you’ve heard of this mod, you probably already know what I did with Sonic. I wanted to incentivize Sonic to use his movement more for mixing up approaches by increasing the reward he gets on his normals, especially DTilt, Up Tilt and Up Air, which is supported really well by his new Dair, which was his Fair in PM (I think current Fair is actually solid so I didn’t want to get rid of it). This is even further compounded by the changes to his specials: Aerial Spin Charge is replaced with Bounce Bracelet, and Spin Dash is replaced with Boost (Which also means that Ground Down B is now called Spin Dash, not Spin Charge, dw about it). For Bounce Bracelet, Sonic turns into a ball, slams toward the ground and bounces off of both it and opponents, with the damage and speed increasing based on how high he bounces from. As for Boost, Sonic starts running at a speed higher than his max run on like frame 9, gaining a hitbox that kills and combos, and after the move ends, Sonic transitions directly into his run if he’s on the ground. If that sounds broken to you, it is. The main catch is that in order to use Boost, you need to fill the Boost Meter by landing 10 hits, and those hits have to come from normal attacks, so Spin Dash camping won’t help fill Boost at all. Speaking of Spin Dash, THAT also travels a lot faster, though that was mostly unintentional (Side and Down B share a ton of code so it’s really hard to edit one without editing the other). Considering Sonic loses a burst option AND it’s harder to control, I think buffing Spin Dash is fine.
+
+
+* Up Tilt has less endlag (FAF: 36 > 33), knockback adjusted (bkb: 40 > 82, kbg: 120 > 40, angle: 78 > 85), fallouts fixed
+* DTilt has less endlag (FAF: 28 > 25), knockback adjusted (bkb: 40 > 50, kbg: 100 > 80, angle: 80 > 73)
+* Up Air fallouts fixed, Ground Up Air 1 knockback adjusted (angle: 110/123 > 100/118, fkb: 120 > 115, kbg: 50 > 100)
+* Dair has been replaced by Sonic’s Fair from PM
+* Side B has been replaced with Boost
+* Aerial Down B has been replaced with Bounce Bracelet
+* Down Throw has less endlag (FAF: 75 > 60)
+
+
+King Dedede
+King Dedede is… mostly fine? He’s somewhat underwhelming but his fundamental design is generally ok, so these changes are mostly QoL and allow him to take more advantage of his options without necessarily giving him great new ones. Also, note that despite adding 25 frames of hitstun to the stars on Dedede Up B, it’s still not + on hit.
+
+
+* Jab comes out faster (startup: 10 > 8)
+* Dash Attack now has 10% heavy armor on frames 7-23
+* FTilt has arm intangibility while the hitbox is active
+* FSmash’s frame 42 hitboxes now come out on frame 40, and its old frame 40 hitboxes/windboxes have been removed
+* Up Smash no longer has a sourspot
+* Nair’s late hit is now the same size as its early hit
+* Fair has more active frames (13-15 > 12-16)
+* Gordos have their prepatch hitbox back, the direction they send you in depends on what side of you gets hit, and Gordos stick to walls consistently (odds of sticking: 50% > 100%)
+* Up B has less landing lag when canceled (30 > 22)
+* Up B’s stars deal 25 more frames of hitstun
+* Back Throw sends at a lower angle (60 > 45)
+
+
+Olimar
+Literally all Olimar needs is fixes. That said, he needs a lot of them. To clarify, when I say “Pikmin don’t take damage while Olimar is getting launched”, I mean, “Pikmin already usually become intangible while Olimar is getting launched but sometimes they inexplicably don’t”. This is a consistency fix, not some game changing buff.
+
+
+* Pikmin no longer take fall damage
+* Pikmin no longer take damage after Olimar has blocked or parried a move, and will stay that way until Olimar either finishes using an OoS option or releases Shield
+* Pikmin no longer take damage while Olimar is getting launched
+* Olimar’s Grabs now work properly when used near a ledge immediately after pulling out a Pikmin
+* If a Pikmin dies, it is immediately moved to the back of Olimar’s line
+
+
+Lucario
+Lucario is a difficult character to balance. Its damage output is pretty low without Aura, but its fundamental kit is surprisingly good. Because of this, just giving Lucario better but less polarizing aura scaling could very easily lead to Lucario being busted while also feeling less unique. So instead, I decided to sidestep the issue by giving Lucario a way to build Aura and self-damage without the risk of taking knockback in the form of Up Taunt. Being at a higher % is obviously still risky, but this way Lucario doesn’t run the risk of dying before even reaching a high %. Otherwise, Lucario’s changes are all just QoL.
+
+
+* Jab comes out faster (startup: 5 > 4)
+* DTilt angle adjusted (60 > 65) and Lucario’s paw now has intangibility
+* Up Smash fallouts fixed
+* Neutral B’s charge has less kbg (93 > 80)
+* Up Taunt now deals 5% self damage, and holding Up Taunt near the end of the animation will extend it
+* Side B’s grab box which affects both grounded and aerial opponents is bigger 
+R.O.B.
+ROB’s design is really interesting and healthy in my opinion. He has good boxing and combo tools but unlike other zoners he can’t just skip the boxing phase with a super safe aerial… usually. His ground normals can keep their utility, but Nair has no business having less lag than Wolf or Squirtle Nair, so that’s getting nerfed. The game’s mechanics as a whole are enough to tone down his projectile game, so besides the Nair nerf, ROB gets QoL fixes but has mostly the same kit.
+
+
+* Up Tilt fallouts fixed
+* Up Smash fallouts fixed
+* Down Smash fallouts fixed
+* Nair has more landing lag (7 > 12)
+* Up Air fallouts fixed
+
+
+Toon Link
+Toon Link’s design is fine in a vacuum, but I think it could be made more distinct from the other Links without changing too much. For now though those differences are WIPs, so he just gets QoL.
+
+
+* DTilt knockback adjusted (angle: 361 > 45, bkb: 30 > 50, kbg: 88 > 60) and the move deals 2 more frames of hitstun
+* FSmash comes out slower (startup: 16 > 25) but deals more damage (14.0 > 20.0), uses the Skull Hammer and has a larger hitbox
+* DSmash’s 1st hit now connects into the 2nd hit rather than launching
+* Dash Attack deals 3 more frames of hitstun and has a bigger hitbox (4.2/4.0/3.5 > 4.7/4.5/4.0)
+* Nair has more range (size: 4.0/4.5/2.5 > 4.5/5.0/3.0)
+* Fair has more range (size: 5.0/4.0 > 5.5/4.5)
+* Bair has more range (size: 4.0/5.0 > 4.5/5.5)
+* Up Throw has set knockback, roughly matching its knockback at 0%, as well as 4 more frames of hitstun
+* Neutral B now uses a Korok Leaf that shoots charged wind instead of arrows. When fully charged, the wind hits multiple times and kills.
+* Arrows deal 2 more frames of hitstun (Note: This change will be reverted when Neutral B’s rework is implemented)
+* Ground Up B allows Toon Link to move around, but it comes out slower (startup: 6 > 17)
+* Air Up B now uses a Korok Leaf. Since I haven’t implemented this yet I’m not sure much about its properties, but think of Ori from Rivals of Aether.
+
+
+Wolf
+Wolf is the best designed character in the game in my opinion, so uhhhhhh
+
+
+* Jab 1 is bigger (1.6/1.8/2.2 > 3.1/3.3/3.7)
+* Jab 2 is bigger (2.0/2.5/3.0 > 3.5/4.0/4.5)
+* Jab 3 is bigger (2.5/2.8/4.0 > 4.0/4.3/5.5)
+* FTilt fallouts fixed
+* Up Smash fallouts fixed
+
+
+Villager
+Villager’s solid, he’s great at keeping you out but doesn’t really have any good options outside of that, and he isn’t great ENOUGH at keeping you out for that to make sense. These changes make him slightly better at his non-zoning options while also improving his antiair game a bit. Plus, I get an excuse to make Jab cool again.
+
+
+* Rapid Jab Finisher 1 has less endlag (FAF: 39 > 26) and deals more damage (2.0 > 3.0) and knockback (bkb: 60 > 65)
+* Rapid Jab Finisher 2 has less endlag (FAF: 39 > 26), deals more damage (2.0 > 3.0), has adjusted knockback (angle: 361 > 80, kbg: 135 > 80, bkb: 60 > 80), and deals 4 more frames of hitstun
+* Up Tilt fallouts fixed
+* DTilt damage and knockback adjusted (damage: 12.0/10.0 > 13.0/8.0, angle: 75 > 80), and the move has less endlag (FAF: 38 > 35)
+* Dash Attack throws the pot farther (X speed: 2.0 > 3.0, Y speed: 0.1 > 0.9)
+* Nair now has a head hitbox
+* Up Air now matches the animation (size: 5.2/6.5/7.5/3.8/4.5/4.8 > 5.5/6.8/7.8/4.5/5.0/5.5), kbg increased (100 > 110)
+* Dair now matches the animation (size: 2.7/5.2/3.0/6.5/3.2/7.5/3.8/4.5/4.8 > 3.0/6.0/3.3/7.0/3.5/8.0/4.5/5.0/5.5)
+
+
+Mega Man
+Mega Man’s design is already really solid, he’s really good but takes a lot of precision. His projectiles are a bit easier to deal with with the new global mechanics, but they also improve his combo potential, so I don’t think he needs anything besides some minor QoL.
+
+
+* Dash Attack fallouts fixed
+* Bair fallouts fixed
+* Crash Bomb fallouts fixed
+* Leaf Shield hitbox sizes increased (1.3/1.8 > 2.0), and the leaves deal 2 more frames of hitstun
+* Down Taunt is now intangible from f12 to f46
+
+
+Wii Fit Trainer
+Wii Fit has weird hitboxes that don’t work. I gave her weird hitboxes that do work. I also lowered fall speed during deep breathing so it doesn’t make her recovery worse. 
+
+
+* FTilt has a frame 6 hitbox that appears down and in front of Wii Fit
+* Up Tilt damage and knockback increased (damage: 10.0 > 12.0, kbg: 70/50 > 75/55)
+* DTilt has 4 more frames of hitstun, 6 more frames of shieldstun (advantage: -17 > -11), and a new head hitbox on frames 6-7 that sends at a lower angle (ground: 30, air: 300)
+* FSmash now has a hitbox on Wii Fit’s knee
+* Fair’s bottom leg now has a hitbox that sends backwards during the early hit (f9-10) and acts as a weak spike during the late hit (f11-15)
+* Bair’s early hit lasts longer (f5 > f5-7), and the late hit deals 6 more frames of hitstun
+* Fall Speed multiplier during Deep Breathing decreased (1.17 > 1.1 (cooldown), 1.2 > 1.15 (fresh))
+
+
+Rosalina and Luma
+Rosalina’s issues come mostly from how frail Luma is, so besides fixing that, there’s not really much that needs to change.
+
+
+* Rapid Jab has a bigger finisher (5.5 > 8.5)
+* Fair fallouts fixed
+* Up Air’s medium hit now matches its sweetspot
+* Up B snaps to ledge earlier (ledgesnap: f12 facing forward > f5 facing either direction)
+* Luma is intangible while Rosalina is holding Shield
+* Luma HP increased (40 > 50)
+
+
+Little Mac
+I’m gonna be blunt. I don’t think Mac is good on the ground. He has safe normals and a good ground speed, but in Ultimate, that’s the bare minimum for being viable, and he doesn’t have any grounded combos longer than 2 hits. For a character with no aerials, a bad recovery, and even a garbage grab, having a way to push advantage is extremely important, and not only does he not have that, but he also struggles to get in in the first place. As for how I fixed him, my main goals were to A.) Give utility to his aerials as an extension of his ground game, which I did by letting Fair, Bair and Up Air autocancel in a shorthop. This way, after landing a DTilt, he can cover jump with Up Air, mashing options with Fair > another DTilt, and airdodge with another DTilt, being rewarded but only for guessing right. B.) Make his ground options designed to actually cover the weaknesses of his archetype. Side B’s intangibility and distance now give him a way past zoning attempts, Neutral B’s improved armor gives him a response to getup attacks for ledgetrapping, and his buffed grabs and throws give you a reason not to hold Shield against him. C.) Make him less degenerate; even though Mac sucks, people don’t want him to be good because he can just press buttons at a low/mid level. With the buffs, these buttons would go from annoying to straight up overtuned, so they’re toned down a bit. D.) Make him feel more accurate to Punch Out!! Instead of filling KO Meter by getting hit, you fill it by landing counterhits, and lose it by getting hit, like you would with star punches in Punch Out.
+
+
+* FTilt 1 is now a true blockstring, so releasing Shield early will not result in getting hit by FTilt 2
+* Up Tilt damage and knockback adjusted (damage: 6.5 > 9.0, kbg: 120 > 80, bkb: 25 > 50)
+* DTilt knockback adjusted (kbg: 50 > 35, bkb: 50 > 65, angle: 80 > 85)
+* Dash Attack deals less shieldstun (advantage: -16 > -21) but 4 more frames of hitstun
+* FSmash (Up Angled and Non-Angled) deals less damage (20.0/18.0 > 16.0/14.0)
+* Fair kbg decreased (100 > 85)
+* Bair bkb increased (25 > 40), and the move comes out faster (startup: 11 > 10)
+* Up Air autocancels earlier (autocancel window: 40 > 36)
+* Neutral B armor threshold increased (max damage taken: 8.0 > yes), full charged Neutral B has less endlag (FAF: 232 > 187), and the charge can be canceled into an attack earlier (32 > 16)
+* Ground Side B’s intangibility now covers Mac’s entire body, active frames unaffected, and travels more distance (jump speed: 1.7 > 2.0)
+* Air Side B is returned if Mac is hit out of it
+* Up B now covers both sides of Little Mac
+* Down B against grounded opponents has set knockback putting them slightly in front of you while you’re exactly +15 on hit, and against aerial opponents it can be canceled into Side B on hit
+* Grab comes out faster (startup: 9 > 5)
+* Dash Grab comes out faster (startup: 13 > 9)
+* Pivot Grab comes out faster (startup: 14 > 9)
+* FThrow knockback adjusted (angle: 45 > 30, kbg: 105 > 80, bkb: 45 > 55)
+* BThrow non-collateral damage increased (5.0 > 7.0)
+* Up Throw non-collateral damage increased (3.0 > 5.0), kbg increased (105 > 130)
+* DThrow has less endlag (FAF: 45 > 36)
+* KO Meter fills by 1/3rd if an opponent is hit during the startup of a normal attack, but it doesn’t fill at all if an opponent is hit normally, and Little Mac loses 1/3rd of KO Meter when he enters hitstun. KO Punch will replace Straight Lunge if Little Mac has his meter filled at all, with the attributes scaling based on how full it is.
+* Grounded Level 3 KO Punch is now intangible f1-9
+* Grounded Level 2 KO Punch Damage decreased (35.0 > 25.0), but it is intangible f5-9
+* Grounded Level 1 KO Punch Damage decreased (35.0 > 20.0), and the move doesn’t ignore Shields
+* Aerial Level 3 KO Punch Damage increased (18.0 > 25.0), knockback adjusted (kbg: 95 > 100, bkb: 50 > 25), and the move ignores Shields
+* Aerial Level 2 KO Punch Damage increased (13.0 > 18.0), and the move ignores Shields
+* Fall Speed decreased (1.95 > 1.8)
+* Gravity decreased (0.09 > 0.08)
+* Directional Airdodge travels more distance, matching everyone else
+
+
+Greninja
+Greninja’s design is pretty good, but I have yet to see Up Smash connect on someone who missed tech on a platform, so let’s fix that.
+
+
+* Dash Attack has less shieldstun (advantage: -13 > -17)
+* Up Smash 2 has more range (Y offset: 27.0 > Y2 offset: 32.0)
+* Bair fallouts fixed
+* Up Air fallouts fixed
+* Dair has less endlag on hit (FAF: 21 > 14)
+* Down Taunt can be canceled like a regular taunt
+
+
+Mii Brawler
+Mii Brawler is definitely slept on, but 3.1 showed off how good he can be with shorthop autocancel Fair, so I’m letting him have that back. Beyond that, it’s mostly about giving him more utility behind some specials.
+
+
+* FSmash has less endlag (FAF: 68 > 58)
+* Fair fallouts fixed, and the move now autocancels in a shorthop
+* Exploding Side Kick has more endlag (FAF: 80/82 > 90/92)
+* Onslaught travels more distance
+* Helikick has more vertical gain (2.22 > 2.7) but less knockback (kbg: 113 > 100)
+* Feint Jump has its Smash 4 trajectory and landing friction back
+
+
+Mii Swordfighter
+Mii Swordfighter has a lot of moves that are fine when they hit, but he lacks the range and frame data to hit them. He also has a combo game, but one that’s not nearly enough to make up for those shortcomings. My goal when buffing him was to improve confirms off pokes, give him a better Nair while improving followups on the back hit, and make his sword actually feel like a sword. As for specials, I just made them closer in utility so some specials didn’t invalidate others.
+
+
+* Jab 3 has less endlag (FAF: 39 > 29)
+* DTilt kbg reduced (80 > 70)
+* Dash Attack comes out faster (startup: 9 > 7)
+* Up Smash fallouts fixed
+* Nair comes out faster (startup: 10 > 7), knockback adjusted on frames 7-9 (angle: 361 > 74, bkb: 60 > 70, direction: position-dependent > backwards)
+* Fair has more range (size: 4.5 > 5.0), less landing lag (12 > 10), and 2 more frames of hitstun on each hit
+* Bair has more range (z offset: -17.5/-20.0/-17.700001/-10.0 > -19.5/-22.0/-19.700001/-12.0)
+* Blurring Blade now has 10% heavy armor uncharged, 18% heavy armor fully charged
+* Shuriken Shield damage modifier increased (-1/-1.5/-2.5/-3 > 1.5)
+* Airborne Assault’s detection hitbox comes out faster (startup: 25 > 10)
+* Gale Stab no longer puts you into free fall
+* Stone Scabbard’s intangibility lasts 1 more frame, hitbox size increased ()
+* Hero Spin fallouts fixed
+* Ground Counter knockback adjusted (angle: 361 > 80, kbg: 60 > 100, bkb: 85 > fkb: 120)
+* Reversal Slash has a larger reflection hitbox (size: 7.0 > 10.0)
+* Power Thrust comes out faster (startup: 14/16 > 10/12)
+
+
+Mii Gunner
+Literally everything here is QoL. Gunner definitely has flaws but her kit is pretty consistent, she just needs to be better at using it.
+
+
+* Jab comes out faster (startup: 5 > 4)
+* FTilt has more range (size: 2.0/1.5/1.0 > 3.0)
+* DTilt kbg increased (60 > 80)
+* Nair has less endlag (FAF: 42 > 41)
+* Fair applies more backwards momentum to Mii Gunner when the stick is held backwards
+* Up Air’s multihits have 6 extra frames of hitstun
+* Dair sweetspot bkb increased (2 > 20)
+* Mii Gunner can fastfall while using lasers
+* Stealth Burst can start to explode earlier (minimum explosion frame: 19 > 9)
+* Missile has less endlag (FAF: 47/50 > 44/47)
+* Reflector can be jump canceled starting on frame 10
+* Bomb Drop has less endlag (FAF: 54 > 50)
+
+
+Palutena
+I’m really not sure how I feel about Palutena tbh. On one hand I think she’s balanced, being super reliable in exchange for a somewhat linear neutral. On the other hand, her design is just… boring. The changes to Nair are designed to make her combo game more interactive, since good players will still be able to follow your SDI and the direction you’re launched in either way, and DTilt was changed to both make 2 framing harder and give Palu more room to be expressive with DTilt combos. In the future, I might make changes to other options as well to make her more expressive. 
+
+
+* DTilt active frames adjusted (14-28 > 8-14), damage and knockback adjusted (damage: 8.5/5.0 > 7.0, angle: 35/75 > 75, bkb: 40/38 > 38)
+* Nair reverted to prepatch Nair, hitlag and SDI multipliers increased (hitlag: 0.5 > 1.5, SDI: 0.3 > 0.7), shield damage modifier decreased (3 > 0), the 2nd to last hit has an adjusted angle (367 > 366), and the last hit sends you out based on which side you’re on instead of always sending forward
+* Palutena has the only non-tether grab not to be affected by the global range increase
+
+
+PAC-MAN
+PAC-MAN doesn’t need much, but Up Tilt in this game is kinda bad, so I changed it back to Smash 4 Up Tilt. Hydrant is also easier to launch, which gives new options to both PAC-MAN and the opponent.
+
+
+* Up Tilt reverted to Smash 4 Up Tilt
+* Up Smash has its Smash 4 scooping hitbox back, fallouts fixed
+* Hydrant takes less damage before being launched (13 > 11)
+
+
+Robin
+Robin is another character who’s well designed but has some options that are kinda useless, so I made a few changes to lesser used moves to fill some kind of niche, and more importantly, made Robin start matches with Levin Sword like in Smash 4.
+
+
+* Jab links more reliably
+* FTilt has less endlag (FAF: 33 > 28)
+* DTilt sends at a higher angle (30 > 70) and has more kbg (40 > 60)
+* Thunder has a slightly bigger hitbox (size: 1.5 > 3.5)
+* Nosferatu no longer puts you in free fall, but you won’t fall while grabbing someone in the air either
+* Holding B during Elwind allows Robin to only use one jump, losing half the normal amount of magic, and Up B has less landing lag (25 > 20)
+* Robin starts matches with Levin Sword
+
+
+Shulk
+My mentality when changing Shulk more or less amounted to, “Step 1: Remove Monado Arts during hitstun. Step 2: Make changes so Shulk is still viable without Monado Arts during hitstun.” Originally I had also planned on fixing Vision, but I have something better planned for that move.
+
+
+* Jab 1 damage increased (2.0 > 3.5) and it has a bigger hitbox (1.8/1.8/2.0/2.0 > 3.0/2.5/3.5/3.5)
+* Jab 2 hitbox size increased (3.4 > 4.0)
+* FSmash fallouts fixed
+* Up Smash fallouts fixed
+* Nair has more landing lag (6 > 9)
+* Fair has more landing lag (10 > 12)
+* Bair has more landing lag (11 > 13), but it also has its Smash 4 hitbox back
+* Up Air fallouts fixed
+* Dair fallouts fixed
+* Monado Arts can still be buffered during hitstun, but they will only activate on the frame hitstun ends
+* Monado wheel can now be b-reversed
+* Monado Switch has less endlag (FAF: 10 > 7)
+* Monado Switch no longer grants intangibility
+* Jump Art is active longer (seconds: 6 > 8)
+* Back Slash snaps to ledge more consistently
+* Vision now sends opponents back to where they were 2 seconds ago, and forces them to repeat all inputs they made up until the position they were in when they got countered
+* Shulk has his Smash 4 weight back (97 > 102)
+
+
+Bowser Jr. 
+Jr. as a character suffers from a lack of direction in general. He’s stuck between being a trap character and a combo character, but he doesn’t commit hard enough to either, so hitstun and shieldstun was added to let him work better as both. He also has a lot of stuff that doesn’t work, so… I fixed it.
+
+
+* Jab 1 hitbox size increased (2.0/2.2 > 3.5/3.7)
+* FTilt has 3 more frames of shieldstun (advantage: -18/-16 > -15/-13)
+* DTilt fallouts fixed, and the move has 2 more frames of shieldstun (advantage: -11 > -9) and 3 more frames of hitstun
+* FSmash fallouts fixed
+* Up Smash fallouts fixed
+* Nair autocancels earlier (autocancel frame: 42 > 38)
+* Fair blindspot fixed, and the move has 2 more frames of hitstun
+* Bair has 2 more frames of hitstun
+* Dair has 2 more frames of hitstun on both the launcher and the landing hit
+* Neutral B travels slower uncharged (speed: 1 > 0.8), drops to the ground after 90 frames uncharged, and has less endlag (FAF: 41 > 21)
+* Side B’s armor has a higher damage threshold (6 > 8)
+* Up B now has heavy armor causing Bowser Jr. to not take non-tumble knockback
+* Mechakoopa has less endlag (FAF: 67 > 50), will no longer stop on Shield, doesn’t hurt Bowser Jr. if it explodes while held, and will bounce if thrown down fast enough after picking it up
+* Grab actually acts like a tether instead of just having the appearance of one, increasing its range but making it unaffected by the global Grab Break change
+
+
+
+
+Duck Hunt
+Duck Hunt’s issues come entirely from inconsistency, but I also gave them some QoL changes. To clarify, when I say the Smash Attacks now have aimbot, I mean that the hitbox position is set to the defender’s position. If you manage to fall out of any of those moves I will be genuinely impressed.
+* Up Tilt knockback adjusted (kbg: 40 > 130, bkb: 95 > 35) and the move has more range (size: 5.0 > 7.0, y offset: 15.0 > 13.0)
+* FSmash no longer has RNG, the player now has aimbot when a hit connects
+* Up Smash now has aimbot when a hit connects
+* DSmash now has aimbot when a hit connects
+* Up Air fallouts fixed
+* Dair fallouts fixed
+* Shooting the can no longer puts Duck Hunt in endlag if they’re nearby
+* Prepatch Clay Pigeon restored
+
+
+Ryu and Ken
+(Shared Changes)
+The Shotos are already really good, but there are a ton of moves that don’t work, all of which I fixed. The main issues were proximity normals not updating properly during endlag, light normals being a minimum of 1 frame slower than they’re supposed to be when not buffered, not being able to do Input Tatsu out of a run, and a few others. The speed increase was because every character in Ultimate had their speed raised by 10% except for Ryu, and I needed to maintain the same difference between Ryu and Ken if I changed it. Considering everyone can microspace now and Shoto walk isn’t as broken, I’m fine with giving them more speed.
+
+
+* All unbuffered light normals come out on the correct frame
+* Jab 3 has a lower angle (45 > 361), less startup (8 > 4) and less endlag (FAF: 36 > 33)
+* If Heavy Up Tilt is canceled into Light Up Tilt on specifically frame 4, the upper body intangibility will continue be applied to Light Up Tilt while the hitbox is active
+* PJab detection range works properly
+* PTilt detection range works properly
+* If a Hadoken input is made immediately after inputting forward, Ryu and Ken will perform a Hadoken instead of a Shoryuken
+* Hadoken has less endlag (FAF: 58 > 54) and all hitbox sizes increased by 3 units for the input versions
+* Shotos can now use Input Tatsu out of a run without turning around
+* Medium Tatsu spins 3 times instead of 4 (Ground and Air)
+* Aerial Light Tatsu spins 2 times instead of 4
+* Focus Attack has a higher armor threshold (% range: 16.8-33.6 > 22-39)
+* FADC has less endlag (FAF: 19 > 15)
+* Walk speed increased (0.75/0.825 > 0.825/0.9075)
+* Run speed increased (1.6/1.76 > 1.76/1.936)
+* Ryu and Ken now drop through platforms only one frame slower than everyone else
+
+
+Ryu
+(Individual Changes)
+Having fixed the Shotos, Ryu’s changes mostly serve to give him more of a reason to use input specials, and make him slightly better at zoning.
+
+
+* PTilt’s hitstun has been changed to match Ken’s version
+* PJab now uses set knockback, moving the opponent towards Ryu’s sweetspot Shoryu range
+* Input non-Shakunetsu Hadoken has less endlag (FAF: 58 > 50)
+* Shakunetsu Hadoken fallouts fixed
+* Input Tatsu has invincibility instead of intangibility
+* Grounded Medium Shoryuken is weaker (angle: 80 > 70) but no longer has a sourspot
+* Medium Shoryuken threshold increased (frames to get medium: 4-5 > 3-5)
+* Side Taunt has been replaced with an empty Hadoken animation
+
+
+Ken
+(Individual Changes)
+I think Ken is really broken, but he has even more inconsistencies than Ryu, so the changes are mostly fixes + some QoL. Since his neutral is better because of the changes to both Shotos, I’m nerfing his damage output by making PJab not combo into anything other than Shoryu. That said, this also makes PJab > Shoryu impossible to fall out of.
+
+
+* H.Jab has been replaced with Jab 3, except it deals more damage and knockback (damage: 5.0 > 12.0, kbg: 50 > 70), and unlike actual Jab 3, this version is still frame 8
+* PJab now uses set knockback to put the opponent above Ken
+* Crescent Kick no longer has a blindspot, fallouts fixed
+* Heavy Tatsu damage and knockback reverted to pre-7.0, it deals 2 more frames of hitstun, pulls you towards Ken at max range, and the back hit now sends forward into the rest of the move
+* Shoryuken fallouts fixed
+* The 2nd hit of Aerial Medium Shoryuken deals more knockback (kbg: 112 > 117)
+* The 3rd hit of Aerial Heavy Shoryuken deals less knockback (kbg: 107 > 87)
+* Up Throw’s axe kick now matches Ryu’s version
+* Down Taunt now has a hitbox. Do yourself a favor and never try to use it.
+
+
+Cloud
+Cloud’s Nair was too big in Smash 4, but in this game the hitboxes don’t even cover the whole sword, so now they do.
+
+
+...what, you wanted more?
+
+
+* Nair’s hitbox covers the full sword
+* All grabs come out 2 frames faster
+
+
+Corrin
+Corrin’s main issue is just that there’s not much of a reason to use her over other sword characters even though she’s pretty good in a vacuum. The biggest change she got was bringing back the Smash 4 distance on Pin, but note that it still has the endlag changes they added in this game. Also, I spent 4 years thinking Nair was a multihit, so it is now. The hitboxes themselves aren’t changed or anything, the move can just hit twice now.
+
+
+* Dash Attack range increased (farthest y coordinate: 8.0 > 10.0)
+* DTilt range increased (farthest y coordinate: 8.0 > 12.0)
+* Nair’s sword and pin hitboxes can connect separately
+* Dragon Fang Shot hitlag multiplier increased (0.3/0.5 > 0.5/0.75)
+* Pin now crosses up and travels the distance it did in Smash 4
+* Dash Speed increased (1.892 > 1.98)
+
+
+Bayonetta
+Bayonetta’s design is fundamentally flawed, because when your character is built around ladder combos, you’ll either have a broken character with consistent kill confirms that aren’t dependent on stage position, or a bad character with no consistent kill confirms at all. Instead of trying to balance that, I’m removing her requirement to ladder completely and giving her new, more horizontal followups using her specials, by removing special landing lag. I’m also making bullet arts more useful by giving them a niche that doesn’t invalidate the regular version. For example, Bayo can use BA Side B on Shield, but the BA version is -21 while the regular one is only -10. Besides that, Bayo has more kill power with Bair and Dash Attack, and a better neutral with FTilt and DTilt, and the “because Bayo'' weaknesses are gone.
+
+
+* Jab comes out faster (startup: 9 > 6)
+* FTilt fallouts fixed, FTilt 1 does more damage (3.0 > 3.5) and has leg intangibility on startup
+* Up Tilt fallouts mostly fixed, and when you do fall out, it still has combo potential
+* DTilt has less endlag (FAF: 29 > 27)
+* Dash Attack deals more damage (10.0/8.0 > 12.0/10.0)
+* Bayonetta’s Smash Attacks no longer have a lower multiplier than everyone else’s
+* Regular Nair has less landing lag (10 > 8)
+* Bullet Art Nair has more shieldstun (-16 > -13)
+* Fair links better
+* Fair 3 is stronger if both of the previous hits are held long enough for Bullet Arts to activate
+* Bair has bigger hitboxes (size: 4.6/4.2 > 6.2/4.8)
+* Regular Bair has less endlag (FAF: 35 > 30)
+* Bullet Art Bair deals 2% more damage, but has more landing lag (16 > 18)
+* Up Air has 3 more frames of hitstun
+* Bullet Art Up Air has less landing lag (16 > 14)
+* Dair no longer has a trip chance, has less landing lag (30 > 25), and has less endlag (FAF: 53 > 48)
+* Bullet Art Dair deals more damage (5.0 > 8.0)
+* Heel Slide has more shieldstun (advantage: -25/-26 > -10), and can transition into the Bullet Art version on Shield
+* Bullet Art Heel Slide deals 8 more frames of hitstun but less shieldstun (advantage: -15 > -21)
+* After hitting someone with ABK, Bayonetta no longer loses the 2nd use of it if she doesn’t use it within 60 frames
+* dABK has 20 frames of landing lag even on hit (30 > 20)
+* Bullet Art Witch Twist travels higher, but it’s easier to fall out
+* Witch Time lasts longer
+* Specials no longer add landing lag
+* Directional Airdodge travels more distance, matching everyone else
+
+
+Inkling
+I don’t think Inkling is particularly unbalanced, but I think she does a really bad job playing like a Splatoon character would; Inkling in Splatoon puts an emphasis on spreading ink to control the stage and have better movement, without kills necessarily being the main focus. Inkling in Smash… can only spread ink using one committal special, doesn’t gain any movement benefits from it, the ink doesn’t last a particularly long amount of time, and the only benefit to inking an opponent is being better at killing. Inkling’s changes result in her being harder to play, but the main goal was to make spreading ink a key part of her kit. Since Ink doesn’t make opponent’s take more damage, Inkling struggles a lot more to kill despite her improved stage control, so other changes have also been made to give her better kill power, albeit in exchange for some safety. 
+
+
+* Bair has more landing lag (6 > 12) and deals 4 more frames of hitstun
+* Inkling can stop shooting sooner during Neutral B (minimum bullets: 4 > 1) but has a slower shooting interval (frames: 4 > 6)
+* Ink bullets can now spread ink on the ground
+* Roller comes out faster (startup: 16 > 11), has less endlag (FAF: 36 > 30), decelerates faster (0.06 > 0.1), and Inkling can jump and stop sooner after moving (frames: 15 > 10), but it no longer buries
+* Splat Bombs can now spread ink on the ground
+* Ink stays on the ground for longer (seconds: 5 > 8)
+* While outside of ink:
+* Inkling will no longer enter squid form while dashing, and therefore will no longer low profile attacks
+* Dash Speed decreased (2.112 > 1.98)
+* While standing in ink:
+* Inkling recovers ink twice as fast (frames: 100 > 50)
+* Inkling will enter squid form while dashing, and therefore low profile attacks
+* Dash Speed increased (2.112 > 2.36)
+* Inked opponents no longer take increased damage, but now have up to a 10% speed penalty applied to walk, dash, run, and air speed
+* Inkling maximum time spent charging ink decreased (frames: 180 > 100)
+
+
+
+
+Ridley
+Ridley’s design isn’t too bad, but he doesn’t really feel like enough of a monster, if that makes sense. I didn’t think he needed many changes to fix this, and the changes I did add serve mostly to make him a bit scarier, though they do all tend to also help with other weaknesses, like his recovery. 
+
+
+* Up Tilt comes out faster (startup: 8 > 7)
+* Up Smash has more active frames (12-17 > 11-20)
+* Skewer goes through Shields
+* Ridley has an extra double jump
+* Ridley’s double jumps are higher (32 > 34)
+* Ridley’s double jump air accel is higher (0.9 > 1)
+* Weight increased (107 > 130)
+* Model scaling increased (0.95 > 1), but Ridley’s hitboxes are all scaled up accordingly
+
+
+Simon and Richter
+(Shared Changes)
+I like the Belmonts’ zoning, but they have plenty of issues, so most of their shared changes are gonna be about fixing inconsistencies, while their individual changes make each one more specialized.
+
+
+* Held Jab has more range (active whip nodes: 7 > 10)
+* Up Tilt’s scooping hitbox reaches lower, covers both sides of the character, and links into the main hit
+* DTilt 2 comes out faster (startup: 8 > 7)
+* Nair fallouts fixed
+* Dair has more range (y2: n/a > -1.0, z2: n/a > 4.0)
+* Up B fallouts fixed
+* Grab comes out faster (startup: 10 > 7)
+* Dash Grab comes out faster (startup: 13 > 11)
+* Pivot Grab comes out faster (startup: 14 > 12)
+
+
+Simon
+(Individual Changes)
+In making the Belmonts more distinct from each other, I took the approach of, “buff the moves that each Belmont is more known for using.” In Simon’s case, this meant making some of his regular whip moves stronger, and buffing his axe since that was something he introduced to the series. He also got a few other changes, but those will make more sense when you see Richter’s changes.
+
+
+* Nair has less landing lag (14 > 12)
+* Fair is 2 frames faster (startup: 14 > 12), matching the startup of FTilt
+* Bair is 2 frames faster (startup: 14 > 12), matching the startup of FTilt
+* Up Air is 4 frames faster (startup: 16 > 12), matching the startup of FTilt
+* Axe’s angles are more distinct from each other (65/60/55 > 70/60/50), the projectile has lower gravity (0.15 > 0.09), and the move has less endlag (FAF: 67 > 60)
+* Air Up B travels more distance (pass_mul: 1.0 > 1.25)
+
+
+
+
+Richter
+(Individual Changes)
+Like I said, Belmont changes involved buffing moves that each one was known for using. For Richter, this included a better Uppercut, DTilt, Dair, and Dash Attack. Richter’s Cross also canonically acts a bit differently from Simon’s, so I changed it to reflect that. These changes led to Richter playing more aggressively, so I gave him a couple misc frame data buffs to compliment his new design.
+
+
+* Jab comes out faster (startup: 5 > 4)
+* FTilt has more startup (12 > 14), matching the startup of Fair/Bair
+* DTilt 2 has less endlag (FAF: 44 > 30), allowing Richter to act before landing on level ground
+* Dash Attack has less endlag (FAF: 55 > 45)
+* Nair has less landing lag (14 > 10)
+* Dair no longer spikes, but it now deals 3 more frames of hitstun)
+* Ground Up B travels more distance (pass_mul: 1.0 > 1.25)
+* Air Up B travels more distance (pass_mul: 1.0 > 1.5) but the last hit has less kbg (86 > 66)
+* Cross stays in place longer before moving backwards (frames: 2 > 22)
+
+
+King K. Rool
+I’ll be honest, I had no idea how to change K. Rool. Credit to Plague Von Karma for explaining K. Rool’s weaknesses and some interesting properties on him that were changed during development. That being said, K. Rool is essentially designed to use belly armor and intangibility to brute force through interactions. The problem comes when either his belly armor can’t do that, or when he can’t force interactions to begin with thanks to bad frame data. In changing K. Rool I buffed some of his frame data to be better in neutral, and per Von Karma’s direction, made sure not to buff Crown’s FAF too much. Also, in prerelease K. Rool had intangibility on all of his aerials, but in the base game he only has it on Up Air. Putting it on Dair and Nair would be stupid, but I at least put it on Fair and Bair.
+
+
+* Nair has a bigger hitbox (9.5/8.5 > 10.5/8.5), belly armor activates earlier (6 > 5)
+* Fair has intangibility on K. Rool’s feet, autocancels earlier (autocancel window > 40 > 32) and has less endlag (FAF: 58 > 50)
+* Bair has intangibility on K. Rool’s arm
+* Throwing the Crown has less endlag (FAF: 64 > 60)
+* Picking up the Crown has less endlag (FAF: 18/28 > 10)
+* Down B can now be B-reversed, and covers K. Rool’s entire torso
+
+
+Isabelle
+This one is mostly just making her work tbh. Giving her a wall jump like Villager gives her better ledge mixups, Nair’s range makes it a better zoning tool, etc. That said, she does have one new major change, being the changes to Lloid. The ability to lock it in place gives her much more ability to control space and opens up new combo potential.
+
+
+* Up Tilt has more range (size: 3.5/5.0 > 4.5/6.0), hits behind Isabelle on its first active frame, and has less endlag (FAF: 30 > 29)
+* DTilt has less endlag (FAF: 35 > 30), but deals less damage (13.0 > 11.0)
+* Dash Attack has less endlag (FAF: 40 > 38)
+* Up Smash now has transcendent priority
+* DSmash is stronger and the strength is consistent across both hits (damage: 10.0, kbg: 120, bkb: 40)
+* Nair has more range (size: 4.0/3.0 > 5.0/4.0), sends at a higher angle (361 > 50), and has less endlag (FAF: 34 > 30)
+* Fair and Bair bullets now sweetspot for 2 more frames
+* Up Air now matches the animation (size: 6.5/4.5 > 6.8/5.0), kbg increased (100 > 110)
+* Dair now matches the animation (size: 3.0/6.5/4.5 > 3.3/7.0/5.0)
+* Side B has a more consistent reel in hitbox and is active while not moving
+* Setting up a Lloid Trap has less endlag (FAF: 50 > 26), and the mine lasts longer before despawning (seconds: 10 > 20)
+* Lloid Rocket fallouts fixed, the rocket starts at its max speed rather than accelerating to it, is active for longer (frames: 50 > 80), and if Isabelle inputs Down B while the rocket is moving, it will come to a near complete stop, with the explosion timer paused. While in this state, the rocket will explode on contact.
+* Isabelle can wall jump
+* Dash Speed increased (1.815 > 1.84)
+Incineroar
+Despite being a grappler, Incineroar doesn’t have the best grab game, nor does he even have the fastest grab. In buffing Incineroar, I gave him stronger throws, giving him the ability to tech chase off of Back Throw similar to Brawl Snake DThrow, and making FThrow roughly as strong as BThrow to make sure he doesn’t lose kill power. Adding to this, the changes to Jab make him even scarier because someone who’s trying to bait a grab may see his fake grab, try to punish it, and get punished by his real grab. 
+
+
+* Jab 1 has been replaced by a fake grab with less endlag (FAF: 38 > 24) that can be canceled into Jab 2 starting on frame 20
+* Jab 3 deals more damage (6.7 > 8.9), and if Jab 2 connects on an opponent in the startup of an attack, it deals even more damage (8.9 > 20.0)
+* Tipper Fair damage increased (13.0 > 15.0)
+* Tipper Bair damage increased (13.0 > 15.0)
+* Up B’s late landing animation can now autocancel
+* Revenge is intangible for longer when it successfully counters (i-frames: 1-13 > 1-24)
+* Pummel deals more damage (1.6 > 2.8)
+* FThrow damage and knockback adjusted (damage: 12.0 > 14.0, angle: 45 > 32, kbg: 58 > 80, bkb: 82 > 60)
+* BThrow leaves opponents in a wakeup situation like Snake DThrow
+* Run Speed increased (1.18 > 1.507)
+* Air Speed increased (0.88 > 0.945)
+
+
+Piranha Plant
+Piranha Plant is designed to be a “weird zoner”, if that makes sense. Its main problem is that its weird zoning tools aren’t enough to compensate for its regular tools, so I buffed its normals to be better at controlling space and buffed its specials a bit to be better for its more unorthodox setups.
+
+
+* FTilt 1 has more range (size: 6.3 > 7.3, z: 12.0 > 13.0, z2: 13.0 > 14.0), FTilt 2 has more knockback (kbg: 110 > 120), and both hits have an extra active frame
+* Up Tilt now has sweetspot priority
+* DTilt has more range (z offset: 5.5/9.5/13.0/17.0 >5.5/10.5/15.0/20.0) and less endlag (FAF: 29 > 26)
+* FSmash now has sweetspot priority
+* Up Smash fallouts fixed
+* Nair’s final hit has more range (x offset: 0.0 > 1.8), and Plant now has a head hitbox for all hits
+* Fair has less landing lag (13 > 11)
+* Bair has less landing lag (16 > 10), and endlag (FAF: 62 > 52), with shieldstun only partly compensated (advantage: -11 > -9), hitbox height adjusted (y offset: 4.0 > 4.5), and the move now has a late hit that’s active for 3 frames and deals 10%, adjustments from 8.0.0 reverted
+* Up Air has more active frames (7-9 > 7-10)
+* Side B has less endlag (FAF: 39/49 > 36/46)
+* Down B can swivel to face in any direction
+
+
+Joker
+Joker is a pretty well designed character. Arsene, however, is not. I don’t think nerfing Arsene would be a good idea because it’d make him feel much less rewarding to have, so instead, I decided to make him harder to get, similar to the other comeback mechanics. Also, a counter that’s as fast as an airdodge should not be that strong, so it’s slower now.
+
+
+* Up Gun has less landing lag (20 > 10)
+* If Up Gun hits, Joker will take no landing lag
+* Tetrakarn and Makarakarn come out slower (startup: 4 > 6)
+* If Joker uses Rebel’s Guard and doesn’t block any attacks, he’ll lose 1 point of meter for every 2 frames he held the button
+* Joker receives Arsene after taking 100% instead of 75%
+* Joker no longer respawns with 1/5th of the Rebellion Gauge already filled
+* The 7.0.0 nerf to Arsene’s duration has been reverted
+
+
+Hero
+Hero is an incredibly awkward character to buff. If I were to make him on par with everyone else before factoring in RNG, he becomes broken after, while if he’s not as good as everyone else without it, he needs to get lucky just to have a fair chance. In changing him, I tried to give a little more to his normals while making him less likely to be able to use his stronger spells, discouraging topdecking, and lowering the crit rate. That being said, I also let Fair and Bair crit so he actually has a chance of landing crits on moves that he can actually land. Also I gave him RNG manipulation so good spell uses and crits are more earned. Here’s a doc explaining how that works: https://docs.google.com/document/d/1yTAXwfYogS2fbu35NSFJu7HNY6Dr6bdx0IMehc3lW2Y/edit?usp=sharing
+
+
+* Up Tilt has less endlag (FAF: 42 > 38)
+* DTilt deals 4 more frames of hitstun
+* Up Smash now has a scoop hitbox that deals 2% less damage (4% less damage if the move is a critical hit)
+     ?    The angle that Down Smash’s 1st hit sends at is now completely random
+* Fair can crit
+* Bair can crit
+* Up Air kbg decreased (106 > 93)
+* Heal odds decreased, and the spell no longer has a usage limit
+* Metal Slash breaks Shields
+* Hocus Pocus and Kamikaze have higher odds of appearing
+* Hatchet Man comes out faster (startup: 37 > 35)
+* Crit rate decreased (1/8 > 1/32)
+* The RNG formula is reworked, so Hero can manually manipulate the RNG for the spell menu and critical hits using his inputs. However, DSmash 1’s angle and Hocus Pocus’s effect can’t be manipulated, and if RNG is manipulated to make a spell appear that was in the last menu, or a spell that appears multiple times in the same menu, duplicate spells are replaced with one that can’t be manipulated.
+
+
+Banjo & Kazooie
+Banjo is a character who’s unfortunately forced to play pretty lame because of how his kit was designed, so most of the changes I made were just toward fixing that. Note, while Banjo has plenty of lame tools, Wonderwing is not one of them, and while it’s definitely not a bad move, it doesn’t need to be nerfed.
+
+
+* Up Tilt comes out faster (startup: 11 > 10) and now reaches in front of Banjo
+* Nair fallouts fixed, Nair sends out based on what side of Banjo you’re on rather than always sending forward, landing lag decreased (16 > 8)
+* Fair shieldstun decreased (advantage: -5 > -8)
+* Bair landing lag decreased (18 > 12)
+* Up Air landing lag decreased (12 > 8)
+* Dair can now be jump canceled on frame 45, or as soon as the move hits an opponent
+* Bombs take longer to automatically explode (frames: 135 > 300)
+* Air Speed increased (0.92 > 1.12)
+* Fall speed decreased (1.76 > 1.6)
+* Fastfall speed decreased (2.816 > 2.56)
+
+
+Terry
+Terry’s design is fine, but he doesn’t feel like a KoF character, and his playstyle is kinda boring lacking real mixups. It’s not bad or anything, but the fact that he doesn’t have any real incentive to go for specials other than Power Dunk (and sometimes Rising Tackle) after a Jab is telling. To change this, I gave him more followups off of Jab other than Power Dunk, but nerfed both Jab and FTilt to compensate. Jab’s nerf lets him mash a little less often, while FTilt’s change makes the move useless when unspaced. He also has movement more similar to the Shotos, with the same instant walk that they have in exchange for significantly worse air drift.
+
+
+* Jab comes out slower (startup: 3 > 4)
+* Jab 3 can be special canceled specifically into Power Wave
+* FTilt comes out slower (startup: 8 > 9/10), and on frame 9, the move only consists of a hitbox on his knee that deals less damage (12.0/13.0 > 5.0). If this hitbox connects, the move cannot be special canceled.
+* FSmash now has intangibility on Terry’s right leg from frames 11-17
+* Fair has more range (y: 4.0/2.5/0.0 > 4.0/2.0/-1.0, z: 3.0/7.0/11.0 > 3.0/7.5/12.0)
+* Up Air comes out faster (startup: 7 > 6), sends at a lower angle for its first active frame (75 > 70), and has less endlag (FAF: 36 > 33)
+* Light Command Input Crack Shoot travels less distance, but it no longer launches the opponent and leaves Terry exactly +4 on hit
+* Power Dunk fallouts fixed
+* Terry now has a charge input version of Dash Attack, performed by inputting back, then down/forward. Compared to the normal version, charge Dash Attack comes out faster (startup: 10 > 8), deals more damage (12.0/10.0 > 15.6/13.0), has a different angle (50 > 55), and has adjusted knockback (kbg: 83 > 78, bkb: 60 > 65). The move can be canceled into like a regular special.
+* While Final Smash Meter is enabled, Terry’s Super Specials cost 50% of his FS Meter instead of requiring him to reach 100%
+* Terry now only drops through platforms one frame slower than everyone else)
+
+
+Byleth
+There’s not too much to say about Byleth’s changes, she pretty much exclusively has QoL changes. Her fundamental design is pretty solid, she’s just not amazing at executing it, though not bad or anything.
+
+
+* Jab 1 hitbox size increased (2.0 > 3.0)
+* Rapid Jab Finisher has more range (z: 18.5 > 21.5)
+* FTilt comes out faster (startup: 8 > 7)
+* DTilt has more range (size: 2.8 > 3.8, ID 1 z2: 25.5 > 27.5)
+* DSmash angle adjusted (63 > 45)
+* Nair fallouts fixed
+* Neutral B comes out faster (startup: 45 > 41)
+* Ground Side B angle adjusted (59 > 54)
+* Aymr comes out significantly faster (startup: 62 > 25) with FAF compensated, the move spikes during the last 3 active frames if it doesn't hit the ground, and if it hits the ground, the move has significantly less endlag (FAF: 134 > 62), but it does less damage (30/25 > 20/15), and no longer deals additional Shield Damage
+
+
+Min Min
+I’ll be honest, I actually think a lot of Min Min’s core kit is fine. It can be frustrating to fight against, but there’s generally pretty clear counterplay to her neutral tools, just read whether or not she will jump or throw out a second attack after using an arm, and you can get in. That being said, the fact that Min Min is able to jump AND use a second attack to keep herself safe is pushing it, but it’s also kind of necessary that she keep that ability for her combo game to work. So instead, Min Min has to choose between the second attack and the jump if the first one missed. If the first one hit, though, she’s allowed to do both. This way, she still has a very strong neutral presence, but she’s not as safe when she makes a mistake in neutral.
+
+
+* Min Min can either jump or do a second attack after using an arm attack, but she can only do both if she manages to hit the opponent
+
+
+Steve
+I like Steve’s design and I think it can be left mostly the same, so these changes are mostly just toning down some of his dumb stuff.
+
+
+* Up Tilt deals less shieldstun (frame advantage: -4/-3/-3/-2/-1/-1 > -8)
+* DTilt is now a true block string, but is less safe on Shield (+5 > -1)
+* DSmash only hits once on each side, but since the damage is compensated (0.6/14.0 > 14.6), the move deals slightly more knockback
+* All hitboxes on Bair send out, rather than some sending up (angle: 361/50 > 361)
+* Bair no longer has a late hit, angle adjusted (50/361 > 361)
+* Up Air deals less shieldstun (frame advantage: -4/-3/-3/-2/-1/-1 > -8)
+* Walk speed increased while placing blocks (0.76 > 1)
+* After hitting an opponent’s Shield with Side B, Steve can’t jump out of the cart for 16 frames
+* Steve can’t mine while standing on TNT
+
+
+Sephiroth
+I love Sephiroth’s design, and it actually reminds me a lot of the way I designed Giga Bowser in that he has a lot of obvious strengths, but the counterplay to his options is extremely pronounced, like weak points in a boss fight. I think he could use some minor QoL changes but overall he can be left the same.
+
+
+* Up Smash blindspot fixed
+
+
+Pyra & Mythra
+I think overall Aegis’s design is alright. Mythra is a little overtuned but she doesn’t need to be nerfed all that much. The main issue is really just that Pyra and Mythra lack synergy with each other, and Pyra is undertuned. To fix these issues, I gave Pyra some slight frame data and hitbox adjustments to emphasize her niche over Mythra, then to give them more synergy and tone down Mythra in one change, I made it so whenever you throw someone, you’ll automatically swap mid-move. This way, Mythra doesn’t get as much reward off of her throw combos since she needs to finish said combos with Pyra, but since Pyra’s tools in advantage are still solid in their own right, it isn’t entirely a bad thing, and actually gives Pyra more access to them.
+
+
+* Pyra Up Tilt comes out faster (startup: 11 > 10), blindspot removed
+* Pyra FSmash comes out slower (startup: 20 > 24) but the first active frame now covers some of the area above her
+* Pyra Fair now autocancels in a shorthop
+* Pyra Bair no longer autocancels in a shorthop
+* Flame Nova’s last hit deals less Shield Damage (modifier: 0 > -3), but Pyra moves around faster during the move
+* Prominence Revolt now has super armor starting on frame 8
+* Mythra Nair’s landing hitbox has more horizontal range (z/z2: -4.0/4.0 > -9.0/9.0), causing it to always connect during Nair dragdowns
+* Mythra Bair no longer autocancels in a shorthop
+* Mythra Up Air knockback adjusted (kbg: 60 > 70, bkb: 90 > 60)
+* Lightning Buster no longer has a hitbox behind Mythra
+* Mythra FThrow angle adjusted (33 > 20)
+* When using any throw, Pyra and Mythra will automatically switch with each other
+
+
+
+
+Kazuya
+I think Kazuya is a really well designed character, but there are a few issues with his design. First off, his reflector is definitely overtuned. That’s not a controversial statement. I think it can still be really good, but it doesn’t need to come out before he even kicks, and while it being the strongest reflector may be reasonable, a 2.4x damage multiplier isn’t. Next, I think the idea of crouching normals is cool, but it feels like Crouch Jab is the only one that sees frequent use, and even then it’s only after EWGF, so I think making them a little more accessible in neutral is reasonable. Changing the window from 6 frames to 4 makes them feel better, but being able to go into crouch out of movement options is a lot more important here, so I’m letting him cancel dashes into crouches. I promise this isn’t just an excuse to give him KBD. That being said, this makes EWGF even more overtuned thanks to Crouch Jab being more accessible, so I’m lowering EWGF’s hitstun so it can’t combo into Crouch Jab anymore, but it still keeps its other followups. Finally, Kazuya’s autoturn isn’t immediate, which messes up certain inputs, so I fixed that.
+
+
+* Kazuya has access to his crouching normals earlier after crouching (frames: 6 > 4)
+* Dash can be canceled into Crouch starting on frame 11
+* Backdash can be canceled into Crouch starting on frame 6
+* Jump Side Kick’s back leg intangibility starts earlier (frame: 7 > 4)
+* Left Splits Kick’s reflector has a lower damage multiplier (2.4 > 2.1) and the reflector comes out later (startup: 7 > 12), but Kazuya is now fully intangible between frames 7 > 12
+* EWGF deals less hitstun (hitstun modifier: 19/14 > 16/11), and it is now a 1 frame input
+* If an opponent is behind Kazuya in 1 on 1s, Kazuya’s inputting an FTilt toward the opponent will no longer cause him to use Flash Tornado in the wrong direction

@@ -1,0 +1,744 @@
+﻿Global
+* All Final Smashes can now be blocked unless otherwise specified
+* The way meter builds will now vary by character. 
+* Most Final Smashes will lose their intangibility immediately after the slowdown, with the exceptions being specified.
+* The standard rates for each type of meter gain are:
+   * Advantage: Dealing 220%
+   * Disadvantage: Receiving 135%
+   * Automatic: Waiting about 2 minutes, 40 seconds
+   * Anti-camp: Waiting about 1 minute, 40 seconds, but losing a bit of meter whenever damage is taken
+* How much meter you lose when a stock is taken varies by meter type:
+   * Advantage: None if you die within 10 seconds of getting the meter. After that, 2% is added to your meter loss every second
+   * Disadvantage: 100%
+   * Automatic: Same as Advantage
+   * Anti-camp: N/A (Taking damage drains meter so dying with full meter is impossible)
+
+
+Mario
+This FS has a lot of issues linking properly, mostly because it doesn’t have a finisher, but if it DID have one it’d be really degenerate for carrying people offstage and putting a giant wall of death in front of you in neutral, so I’m making it more of a threat overall, but reducing how long it’s in one spot by increasing the speed and decreasing its active frames. This also helps Mario’s range since it reaches the rest of the stage faster.
+
+
+* The projectile travels faster (0.7 > 1), has less active frames (220 > 170), links better, and has a finishing hit.
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Donkey Kong
+DK’s FS is already really good in the context of his kit for capitalizing off of comebacks, since it sends up and works as a good finisher to his combos. As such, the move doesn’t really need any non-universal changes, but like what will be the case for a lot of heavies, he’ll get it through taking damage since it makes the archetype’s survivability more of a strength, while making not getting edgeguarded more of a win condition.
+
+
+* Meter type: Disadvantage
+* Meter gain: Average
+
+
+Link
+Link’s Final Smash is pretty underwhelming overall and covers a niche he’s already fairly good with, and I don’t really have a problem with that. 
+
+
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Samus
+Samus’s Final Smash is one of the “giant beams that cover the entire stage, which tend to be really hard to counter. This becomes extra problematic when you can angle the move. I think it’s fitting on Samus in particular though, so rather than limit the meter rate like I’ll probably do for the others, I’m going to make it so Samus’s Final Smash is less wide, and can’t be angled. This means that while it’s still strong, Samus needs to read whether or not you’ll jump, much like how she lands Charge Shots. Also, in CE, Samus is more aggressive compared to Dark Samus, so she’ll get her Final Smash by hitting you as opposed to having it build automatically.
+
+
+* The move has less width (max/min height: 14.0/-14.0 > 10.0/-10.0) and can’t be angled
+* Meter type: Advantage
+* Meter gain: Slow (Dealing 300%)
+
+
+Dark Samus
+Dark Samus’s beam is just as oppressive as Samus’s, and her zoning is already better than Samus’s in CE, so I’m gonna lean into that a bit more by making her FS timer dependent. That being said, this isn’t really a move I think she needs, so it’s gonna build REALLY slowly in exchange for being able to be angled.
+
+
+* The move has less width (max/min height: 14.0/-14.0 > 10.0/-10.0) and deals less Shield Damage (literally unblockable > -10)
+* Meter type: Automatic
+* Meter gain: Slow (4 minutes, 20 seconds)
+
+
+Yoshi
+Yoshi’s FS is already solid, I don’t think it really needs changes.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Kirby
+Kirby’s Final Smash is pretty well designed, but this is the first example of a Final Smash that paralyzes the defenders before the actual attack comes out, which is really bad design imo. I get that the idea is to guarantee it’ll hit instead of people being able to start shielding during the cutscene, but whether or not you think they’ll avoid it should be part of the decision making process since it’s so rewarding imo.
+
+
+* The move no longer has a paralyzing hit during the cutscene
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Fox
+Fox’s FS is really good as a finisher, but the hitbox is a bit smaller than it feels like it reasonably should be, so I’ll change that a bit.
+
+
+* The hitbox is slightly bigger
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Pikachu
+Pikachu is a really well rounded character and while he is balanced after the changes I gave, he doesn’t exactly lack weaknesses, so his FS doesn’t really need to fill a niche. It’s not too hard to fall out of his FS, which I’ll fix, but other than that he’s fine.
+
+
+* Fallouts fixed
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Luigi
+I knew I needed to change this, but I couldn’t think of what to do with it. Eventually I randomly thought, “what if I gave him Denjin Hadoken lmao”, and that turned into me giving him a Thunder Hand attack.
+
+
+* Luigi Final Smash is now Thunder Hand, a projectile attack that stuns opponents but deals low damage.
+* Meter type: Anti-camp
+* Meter gain: Average
+
+
+Ness
+Not entirely sure how I feel about Ness’s FS. PK Star Storm feels a little underwhelming but also like it can very easily shut down peoples’ options in the right situation. That being said, now that it can be Shielded so avoiding it is more easily, I feel like letting Ness move for part of while it’s active is reasonable.
+
+
+* Ness can move while using the move.
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Captain Falcon
+Falcon’s Final Smash is already perfect, not much to say here.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+Jigglypuff
+Will likely need big changes
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Peach
+Peach’s FS is arguably the best in the game, and considering Peach already has crazy damage output, I don’t think giving her an option to heal herself to 0% AND get a free approach that the opponent has no way to avoid is necessary. That being said, Peach doesn’t really have any notable weaknesses to mitigate with her FS, so I’m taking the SF4 Elena route and giving her a heal. That being said, in order to get the heal, Peach needs to commit to avoiding turnip pulls, which will each cost about 1/10th of her meter. That way, she has to pick between a safe neutral or the heal.
+
+
+* Instead of putting the opponent to sleep and spawning Peach’s, her FS simply heals 35%
+* Meter type: Automatic
+* Meter rate: Fast (Roughly 1 minute, 40 seconds)
+* Other meter properties: Every time she pulls out a turnip, she loses 1/10th of meter (NOTE: Does not affect her ability to pull turnips)
+
+
+Daisy
+Unlike Peach, Daisy doing a dance and healing feels a little out of character. Combined with the fact that Daisy’s new design doesn’t care as much about turnip combos, and this design doesn’t feel like as much of a detriment, so I’m reworking it to give her better turnip RNG, and in contrast to Peach, Daisy gains her meter by pulling turnips.
+
+
+* When Daisy uses her Final Smash, the next 5 turnips she pulls are guaranteed to be items
+* Meter type: Special
+* Meter condition: Every time Daisy pulls a turnip, she gains 1/20th of her meter
+
+
+Bowser
+Bowser’s Final Smash is in a really difficult spot, because it’s definitely a Final Smash that needs changes, but the fact that Giga Bowser is now his own character also limits what I can do with him.
+
+
+* Maybe I could do something to focus on his recovery? Idk
+* Meter type: Disadvantage
+* Meter gain: Average
+
+
+Ice Climbers
+Will likely need big changes
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Sheik
+Sheik’s damage output is pretty solid when optimized, but she still doesn’t have many good kill moves, which her Final Smash is pretty good at mitigating. She probably has combos into it though, so I’m giving her a below average meter gain to prevent her from getting it too often. Plus, it makes her damage output a bit more of a weakness even if it’s not one that typically affects her advantage.
+
+
+* Meter type: Advantage
+* Meter gain: Slow (Dealing 300%)
+
+
+Zelda
+Zelda’s FS is another contender for the biggest reason Final Smashes are banned. Triforce of Wisdom’s windbox is huge, incredibly difficult if not impossible to escape in most situations, and kills starting at around 70. I like the idea of ToW having a giant windbox that you need to play around, but I’m toning it down to be more reasonable. I’m also making it so rather than actually kill the opponent, it traps you in it to let Zelda finish you herself. This contributes to her zoning design while being considerably less oppressive in exchange.
+
+
+* Zelda’s Final Smash no longer has a finisher, and the windbox covers less of the stage, but she’s fully actionable while it’s active
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Dr. Mario
+Dr. Mario’s Final Smash has the same issues as Mario, but Dr. Mario already has more of a focus on his pills, and has a much more glaring weakness in his recovery, so instead of giving his FS the same treatment as Mario’s, I decided to make it a completely different move that helps with his recovery: Dr. Hurricane. It’s essentially a stronger version of his Down B, but sends behind you, which forces opponents to respect your recovery or risk being reverse edgeguarded, but it also makes sure that he can’t cheese people with DThrow > Final Smash to kill at 0.
+
+
+* Dr. Mario’s Final Smash is now PHDOOM, a tornado move that travels super high up, like his Down B, and the final hit sends backwards.
+* Meter type: Disadvantage
+* Meter gain: Fast (Taking 115%)
+
+
+Pichu
+Pichu’s FS is in a similar spot compared to Pika’s, so I’m making the same changes to it, as well as slightly buffing the kill power. It’s already stronger than Pikachu’s, but only by a little bit, which isn’t enough to justify how much self damage it takes. 
+
+
+* Fallouts fixed, damage on the last hit increased (21.0 > 23.0)
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Falco
+So apparently Falco can easily combo Up Throw > Up Air > Final Smash to kill off the top. I’m getting rid of that by increasing the startup from 3 frames post-slowdown to 9, but since Falco’s main weakness comes in the form of his neutral, Final Smash working as a way to mitigate that seems like the right approach, so his FS is intangible starting from f2.
+
+
+* Falco’s Final Smash comes out slower (3 frames post-slowdown > 9), but the ground version has intangibility starting on f2
+* Might also give the move followups so he can convert off a neutral win? Idk
+* Meter type: Anti-camp
+* Meter gain: Average
+
+
+Marth
+This move is infamous for being able to kill at 0. I think this is really bad design, but also one that’s kinda intrinsic to Marth FS. With how Marth is designed around tippers, giving him a tipper Final Smash would actually make sense, but as-is, the move uses a prox hitbox, so instead I’m making it only super strong if hit on exactly the last active frame. It still can kill at 0, but it’ll only happen if they’re in an extremely specific spot and aren’t shielding.
+
+
+* The move only kills at 0 if it connects with an opponent on its last active frame. Otherwise it’s about as strong as a fully charged sourspot FSmash.
+* Meter type: Advantage
+* Meter gain: Average
+Lucina
+Unlike Marth, Lucina’s FS naturally won’t have a tipper, but it’ll still be pretty strong. Just not able to kill at 0.
+* The move is weaker lol
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Young Link
+Young Link’s Final Smash is already really good in the context of his kit since he has limited kill options. I do want to incorporate Fierce Deity Link in some way, but I’m not sure about changing the core move.
+
+
+* Might incorporate Fierce Deity, might not, idk
+* Meter type: Advantage
+* Meter gain: Average
+Ganondorf
+I think turning into Beast Ganon is a really interesting concept, and giving Ganondorf a really strong burst option that he can pull out is actually really useful. That being said, it’s another move that has a paralyzing hitbox during the slowdown, but unlike Kirby’s, this one spikes. I don’t want to get rid of that, and imo the player having a bit more control over what Ganon, so I’m changing it to where he doesn’t slash before the charge, but the player can make Ganon perform a couple of attacks while charging by pressing certain buttons. Also, Ganondorf’s recovery is pretty bad, so I’m making it so that his aerial FS doesn’t reset his position, that way if he’s offstage, he can use Beast Ganon to have an easier time recovering.
+
+
+* Ganon doesn’t do a downward slash during the slowdown, but the charge can be canceled into one of three attacks by pressing A, B, or Jump (One of which is said downward slash), and when he uses the move in the air, he isn’t moved to his starting position at the end of the move.
+* Meter type: Anti-camp
+* Meter gain: Average
+
+
+Mewtwo
+Getting this Final Smash to be blockable is both out of character and really difficult, so I’m making it move slower so it’s easier to avoid normally. Kill power nerf might make more sense but idk.
+* The projectile travels slower
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Giga Bowser
+Giga Bowser’s Final Smash animations are currently used for his Down Tilt, Dash Attack and Dair, so I can’t even consider this one until we can add files, but even when I do I have no idea where to go with this one.
+
+
+* Meter type: Disadvantage
+* Meter gain: Average
+
+
+Roy
+Roy doesn’t exactly struggle to kill, and this move is like, REALLY strong. The move also has hitboxes during the slowdown, but these ones are very visibly part of the move, so rather than remove the slowdown hitboxes, I’m making it so the last part of the move doesn’t come out unless those hitboxes connect. That way it’s still really strong, but he’s extremely easy to punish if he uses it badly.
+
+
+* The launching slash doesn’t have a hitbox if the multihits didn’t connect
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Chrom
+Chrom’s Final Smash is low key just a better version of his Dash Attack tbh. I don’t think it really does much in the context of his kit but I also think his kit is pretty well rounded, so it doesn’t really need to. That being said, I was planning on giving Chrom’s Dash Attack i-frames while dashing at one point, and I think that concept actually fits pretty well here.
+
+
+* The move has i-frames while dashing
+* Meter type: Anti-camp
+* Meter gain: Average
+
+
+Mr. Game & Watch
+On the surface this FS feels pretty dumb, but I actually think its design is pretty good. Technically it’s a one-hit, but realistically you can always mash out. It WOULD also be really easy to jump over, but GW can control the height of the move to catch that, so the move is pretty interactive on both sides.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Meta Knight
+Meta-Knight is pretty solid, but can struggle to kill, so a Final Smash that allows you to finish a stock is always appreciated.
+
+
+* Meter type: Advantage
+* Meter gain: Fast (Dealing 170%)
+
+
+Pit
+And here we have the first major “point and click” FS, which would need a complete rework if it weren’t for the fact that I made all Final Smashes blockable. If I think of something better I’ll change this to something else (Three Sacred Treasures would be cool but really difficult to code), but as-is, Pit can definitely struggle to kill and this works great for that.
+
+
+* Meter type: Automatic
+* Meter gain: Average
+
+
+
+
+Dark Pit
+Dark Pit’s Final Smash is pretty good. I think it’s a LITTLE awkward because I used the FS animation for his Neutral B, but otherwise it works well for his kit.
+
+
+* The move no longer has a paralyzing hitbox during the slowdown
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Zero Suit Samus
+ZSS Final Smash is another point and click FS, but I’m a lot more ok with this one in particular because it’s a multihit that’s possible to SDI out of, but I still think making it a little easier to do so is ok, as long as she’s still able to follow it. ZSS goes for a lot of stuff that only works with good tracking anyway so that isn’t too much to ask of the player.
+
+
+* The move is easier to SDI
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Wario
+Wario’s main weakness is neutral, so I thought giving him a tool- yeah I’m gonna drop the facade. I’m just looking for an excuse to bring back old Wario Man lmao. He’ll be toned down from the older versions but essentially he gets speed and frame data buffs for a bit.
+
+
+* The move turns him into Wario Man, giving him faster speed, frame data, and Waft charge rate
+* Meter type: Disadvantage
+* Meter gain: Slow (Taking 280%)
+
+
+Snake
+While working on some other stuff, I accidentally made Snake completely invisible. I thought the concept was actually kind of interesting since while Snake definitely has good buttons, his CQC isn’t that hard to stuff after the Dash Attack nerfs I gave him. His current FS is also kinda overtuned, so I figured I could just take this bug and repurpose it. Insert joke about the Snake-Roy matchup here.
+
+
+* Snake’s Final Smash now turns him invisible for 10 seconds
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Ike
+Ike’s Final Smash is pretty basic, but it makes for a good antiair kill option so it’s solid. He gets disadvantage meter because heavies and survivability etc.
+
+
+* Meter type: Disadvantage
+* Meter gain: Average
+
+
+Pokémon Trainer
+Triple Finish has a ton of range and is extremely hard to get in on, but as much as I’d like to rework what it does and give each Pokémon a separate FS, I think an easier and more interesting solution would be to make it so all 3 Pokemon build their own segments of the meter, and all 3 need to be filled for FS to be available. This requires you to be well versed in all 3 Pokémon and makes the move’s strengths more reasonable. 
+
+
+* Each Pokémon can only build 1/3rd of the meter on its own
+* Meter type:
+   * Squirtle: Advantage
+   * Ivysaur: Automatic
+   * Charizard: Disadvantage
+* Meter gain: Average
+
+
+Diddy Kong
+Bullet Hell. Idk how to handle this one.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+Lucas
+Lucas’s Final Smash can probably get the same treatment as Ness honestly, you can block it but he can move while it’s up.
+
+
+* Lucas can move during this move.
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Sonic
+Super Sonic in concept is cool. Super Sonic in execution is not. In changing him, I tried to make Super Sonic feel more like a better Sonic instead of just flying around with a hitbox on his body or whatever the hell his Ultimate FS does.
+
+
+* The move still turns Sonic into Super Sonic, but rather than flying back and forth, it causes Sonic to temporarily have better frame data and infinite Boosts
+* Meter type: Anti-camp
+* Meter gain: Average
+
+
+King Dedede
+Masked Dedede is pretty cool and good for killing, which is exactly what Dedede needs. The more I’m writing this the more I realize that Final Smashes are actually pretty well made for the most part.
+
+
+* Meter type: Disadvantage
+* Meter gain: Average
+
+
+Olimar
+On the surface this move looks really busted, but considering how easy it is to actually avoid the landing rocket, and the fact that it stops on platforms, I think it’s actually ok.
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Lucario
+Lucario’s biggest weakness is that it’s weak when you have no aura. I already partially mitigated this by giving it a way to safely build aura with self-damage, but Lucario still lacks a way to kill if the player wants to stay at low % and isn’t getting hit, so I’m allowing Lucario to temporarily gain max aura while Mega Evolving by using Final Smash while below 65%. If Lucario is at 65 or above, this effect would be completely useless, so at that point it just has its current Final Smash.
+
+
+* Using Final Smash below 65% gives Lucario max aura for 15 seconds
+* Using Final Smash at or above 65% gives Lucario its current Final Smash
+* Meter type: Advantage
+* Meter gain: Average
+
+
+R.O.B.
+On paper this one seems oppressive, but I think being able to hit R.O.B. out of it combined with spending 3 seconds before using the laser makes it so this one is kinda undertuned if anything. I’m decreasing the startup on the big laser, but otherwise the move can be left as-is.
+
+
+* The big laser comes out sooner (3 seconds > 2)
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Toon Link
+Exact same thing as Young Link here. I think it’s uninspired, but not necessarily problematic. Even if I did change Young Link’s, I’ll most likely keep this one the same.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Wolf
+This one is just Fox’s but slightly bigger. Wolf is a pretty well rounded character so his FS doesn’t really need to cover any weaknesses.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Villager
+This one is actually a command grab, making it one of the few FSs that are still unblockable. I think keeping that property is fine, especially when it helps give him a win condition, especially since the move is pretty small.
+
+
+* Meter type: Automatic
+* Meter gain: Average
+Mega Man
+This move is interesting, because it’s coded as a command grab at the end of the move, but the projectile activates early if it hits someone, making it really good at controlling space at long range. I think it might be interesting to give it some kind of effect if you get the command grab hitbox without triggering the rest, but as for the move itself, it could probably use a bit of a kill power reduction.
+
+
+* Slightly worse kill power
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Wii Fit Trainer
+This move is kinda underwhelming, basically just Mario’s FS but functional. I’m making her get it through taking damage rather than dealing damage because Wii Fit combos are ridiculous, but I think the move itself can probably stay as-is? Idk I’m not sure what else would fit.
+
+
+* Meter type: Disadvantage
+* Meter gain: Fast (115%)
+
+
+Rosalina and Luma
+This move also sucks, but unlike Wii Fit Trainer I actually do have an idea for what could replace it. Rather than spawn a Power Star, Rosalina will spawn a Pull Star, and if you get caught in it, she’ll start rapid firing Star Bits into you, based on the hungry luma scenes in Mario Galaxy. After that, the victim gets launched with much higher knockback than her current FS. The hitbox is smaller, but it also spawns more in front of her. 
+
+
+* The Power Star is replaced with a pull star spawning more in front of Rosa rather than above her, if it hits someone then she feeds them like a hungry luma and then they explode.
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Little Mac
+Ideally I would bring back the old Giga Mac because being huge gives him more reach that makes him better at handling platform camping, but that most likely won’t be possible because of how Mac’s animations don’t fit well on Giga Mac. I still want to give him something to deal with camping, and while the dash helps with that, I think making the uppercut happen on command rather than on hit gives him a good way of punishing people for trying to run away. If you DON’T platform camp him though, don’t expect to see this often, because I’m making it so he gets it automatically but loses meter when he gets hit.
+
+
+* Giga Mac can manually interrupt the dash with an uppercut that reaches the top BF platform, and after using it, the move ends. If the move isn’t interrupted, the flurry of blows is replaced with a single punch that sends out.
+* Meter type: Anti-camp
+* Meter gain: Standard
+Greninja
+As long as Ash Greninja has its own model, I wanted to do something beyond just another Great Aether, so it’s an install FS. Rather than increasing damage like Lucario’s install, or speed/frame data like Sonic and Wario’s install, I think it’d be really interesting if Ash Greninja’s directional airdodge were replaced with an airdash that you could cancel into. This gives Greninja tons of creative freedom that, while it wouldn’t be balanced in a vacuum, makes perfect sense on a Final Smash.
+
+
+* Ash Greninja is now just regular Greninja but with an airdash that can be canceled into on hit and on shield.
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Mii Brawler
+This one’s pretty good. Generic, but it makes sense, and Mii Brawler doesn’t really need much utility that a Final Smash could provide. No complaints here.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Mii Swordfighter
+This move is optimal to use up close since that’s what nets you the most damage. Kinda awkward on a swordfighter but since they lack up close options for the most part, I’m ok with this. That being said, I’m lowering the shield damage because as-is, this is guaranteed shieldbreak/poke.
+
+
+* The move deals less Shield Damage
+* Meter type: Advantage
+* Meter gain: Automatic
+
+
+Mii Gunner
+This one is probably the best fullscreen Beam FS in the game, but I don’t think the animation lends itself as naturally to being worse at being angled, so instead it deals MUCH less Shield Damage and isn’t as wide, but can actually be angled slightly better. This makes avoiding it harder but also not as important, and either way Gunner isn’t getting it often.
+
+
+* The move deals less Shield Damage and isn’t as wide, but can be angled more
+* Meter type: Automatic
+* Meter gain: Slow (4 minutes, 20 seconds)
+
+
+Palutena
+Palutena’s FS is really dumb, but it doesn’t lend itself well to changes. In changing it, I decided she could keep the giant laser, but only after the black hole part of it successfully finds a target. The laser itself is also weaker.
+
+
+* The mega laser only shoots if the black hole sucked someone in, and even then it does less damage
+* Meter type: Advantage
+* Meter gain: Average
+
+
+PAC-MAN
+I was on the fence about how to handle this one, but while making it blockable I needed to replace the searchbox with a hitbox, and that caused the move to instantly end on hit or on block, so… that’s how the move works now. It gets stronger with each lap across the screen, making the move high risk, high reward since if you try to hit them on the last loop and they manage to avoid it then, you get no damage. This FS is really weak when you only get the first hit, so PAC-MAN also gets more chances to use this one than most characters.
+
+
+* The move ends once PAC-MAN makes contact with an opponent, and the attack gets stronger for every lap he takes around the screen.
+* Meter type: Advantage
+* Meter gain: Very fast (75%)
+
+
+Robin
+This FS is interesting because it has the reward of a Great Aether final smash, but it’s safe because while Chrom dashes toward the opponent, Robin stays behind. I’m gonna nerf the kill power of this move to compensate.
+
+
+* The move is weaker
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Shulk
+This FS isn’t that broken but it has a spoiler that doesn’t even make sense in XC, so I’m removing that. Otherwise the move can stay the same.
+
+
+* Seven no longer appears in the Chain Attack
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Bowser Jr.
+I have no idea why but this FS specifically is hardcoded to be unblockable. Not like it starts a cutscene, the move just refuses to be blocked even after giving it regular Shield Damage. Since it’s a bad FS anyway, I’m kinda tempted to leave it as is until I figure out a solution.
+
+
+* Meter type: Disadvantage
+* Meter gain: Average (Idk if hitting the clown car vs. Jr. affects meter gain)
+
+
+Duck Hunt
+Duck Hunt can struggle to kill, this FS does a good job mitigating that, so I think it being strong is good. 
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Ryu
+Ryu’s FS combos are sick, but he can get true 0 > deaths off of them because he can cancel his specials into them, so Ryu will only be able to start gaining meter once both players are last stock. It’s pretty obvious I wrote Ken’s description before this one, huh.
+
+
+* Meter type: Advantage
+* Meter gain: Very fast (75%)
+* Other meter properties: Meter doesn’t start building until all players are last stock
+
+
+Ken
+Both of Ken’s Final Smashes are pretty good, but since he can cancel his specials into them, Shippu Jinraikyaku ends up allowing for true 0 > deaths that aren’t that hard to perform. This is incredibly frustrating as both a snowball and a comeback mechanic, so I’m limiting it to where Ken can’t start gaining meter until both players are last stock. This makes it a powerful way to end games, but not a degenerate way to reset momentum or snowball because your opponent whiffed a button.
+
+
+* Neither of Ken’s Final Smashes are changed at all lol
+* Meter type: Automatic
+* Meter gain: Very fast (50 seconds)
+* Other meter properties: Meter doesn’t start building until all players are last stock
+
+
+Cloud
+Cloud’s FS technically has gameplay differences based on what color you use :^)
+
+
+* Meter type: Advantage
+* Meter gain: Fast (Dealing 170%)
+* Other meter properties: While the meter can fill without limit, the Final Smash can only be used when you have it
+
+
+Corrin
+Generic character has a generic cutscene FS, more at 11. Idk what to say about this one lol
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Bayonetta
+This move is a full screen Witch Time that you can’t really avoid, and that’s really bad design. I think keeping the Witch Time properties is a good idea, but I want to make it more interactive, so after using FS, you need to hit an opponent for the effect to properly activate. If you miss your next attack, the FS ends, but if you hit, you get the reward. This way opponents know when they need to watch out, but you’re rewarded with a really strong FS if you can hit them despite that. 
+
+
+* After using the FInal Smash, you need to hit the opponent in order to trigger the slowdown effect. If your next attack whiffs, the Final Smash ends.
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Inkling
+This is another giant laser FS, but it’s unique because Inkling can move separately from it, and can angle it while it’s active. This becomes a problem because shielding it leads to a guaranteed Shieldbreak or a tick throw, and avoiding it is hard when Inkling can follow you while using the beam to lock down your options. Even if the move didn’t kill, it would still have the benefits of completely covering the opponent in ink, so I honestly think removing the hitstun and shieldstun completely is a good way of balancing this, outside of maybe the launcher hit, since Inkling does struggle to kill especially after the rework I made to inked opponents where it affects mobility rather than taken damage.
+
+
+* The move now only deals knockback on the last hit
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Ridley
+Another burst option FS, rewards heavy characters for using their weight to survive, you know the drill.
+
+
+* Meter type: Disadvantage
+* Meter gain: Average
+
+
+Simon
+Simon probably has cool setups that end with FS, looking forward to seeing them.
+
+
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Richter
+Richter is encouraged to go in a bit more so he can get it by landing hits. Peak game design.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+King K. Rool
+It’s Ridley Final Smash but crocodile
+
+
+* Meter type: Disadvantage
+* Meter gain: Average
+
+
+Isabelle
+See Villager Final Smash
+
+
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Incineroar
+This move fixes Incineroar’s main problem of not being good at approaching, so even though Incineroar does struggle with disadvantage, giving it an automatic meter that builds somewhat fast is probably helpful.
+
+
+* Meter type: Anti-camp
+* Meter gain: Average
+
+
+Piranha Plant
+Plant is designed around stage control and this one kinda just gives you more of it. The effect itself is honestly kinda underwhelming, but Plant being able to move while it’s active is helpful. 
+
+
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Joker
+This FS is probably balanced, but the fact that you can backdash after whiffing the first hit is kinda weird. I think it’s a cool concept though, so I’m making it so that you need to decide whether or not Joker will do the backdash before the first dash begins. If you commit to the backdash, the first one won’t have a hitbox, but the backdash version of the FS will be stronger than the normal one. Also since Joker’s damage output with Arsene is kind of insane, I think it makes sense to only let him build meter when he doesn’t have Arsene. 
+
+
+* The backdash needs to be decided before the front dash begins, and if the player is going to backdash, the front dash doesn’t have a hitbox
+* Meter type: Advantage
+* Meter gain: Fast (dealing 170%)
+* Other meter conditions: Meter cannot be built or used while Joker has Arsene
+
+
+Hero
+This description was originally a joke about me letting Final Smash crit, but while writing it, I realized it actually might make sense to let Hero’s meter gain depend on what your seed is, which makes it a bit more reasonable for a human to be able to determine what their seed is. That being said, since a high seed means you’re gaining meter really quickly, I also want to make the FS itself significantly weaker.
+
+
+* Meter type: Automatic
+* Meter gain: Technically Extremely Fast (30 seconds) if meter were added every frame, but how often Hero gains meter depends on the seed.
+* Meter gain interval formula = (Floor(Seed / 4.26)) + 1
+
+
+Banjo & Kazooie
+This FS is a nice antiair, which fits nicely into Banjo’s kit.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Terry
+There’s nothing really wrong with Terry’s FS, and it’s actually relatively weak to balance out how he can combo into it. That being said, I’m reworking Terry to feel more like a KOF character, and part of that involves reworking his meter and his Super Specials. This is gonna be complicated, so I’ll just explain it on the list. While FS meter is enabled:
+* Terry can use both of his Super Specials below 100%, but it will cost half of his meter.
+* In order to use Triple Geyser, Terry must be above 100%, and it will cost half of his meter.
+* If Terry uses Triple Geyser with more than half of the meter already filled, Triple Geyser’s strength is scaled up based on how much more of the meter was filled. If he uses it with full meter, it’s as strong as it is in the base game.
+* Meter type: Advantage
+* Meter gain: Fast (Dealing 170%)
+* Special properties: Terry doesn’t lose any meter when he loses a stock
+
+
+Byleth
+No real thoughts on this one, it’s a regular big dumb kill move FS and that’s fine by me for Byleth.
+
+
+* Meter type: Advantage
+* Meter gain: Average
+Min Min
+This one could use a bit less startup since it’s based on ARMS rush and Min Min isn’t great in terms of frame data (understandably). I’m making this one disadvantage based even though it contradicts ARMS because I don’t think Min Min should be rewarded for keeping people out, with a kill move that punishes them for finally getting in. 
+
+
+* The move has less startup after the slowdown ends
+* Meter type: Disadvantage
+* Meter gain: Average
+
+
+Steve
+Steve’s damage output is kind of insane so I don’t think it should build from landing hits, but I don’t think anything is wrong with the move itself.
+
+
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Sephiroth
+The move itself is pretty cool, not sure how I feel about the random effects after it but I’ll test how dumb those have the potential to be.
+
+
+* Meter type: Automatic
+* Meter gain: Average
+
+
+Pyra/Mythra
+I think these moves are cool, but having played xc2 I don’t actually think they should need to hit in order for the cutscene to play. Instead, I’m making it so using them starts the cutscene, but the attack after isn’t guaranteed to hit. I don’t really have a special reason for doing this other than “it’s canon and making cutscene FSs blockable is hard”
+
+
+* Using FS starts the cutscene without the initial hit
+* Meter type: Advantage
+* Meter gain: Average
+
+
+Akuma
+Akuma doesn’t have a meta, so I’m just going to give him an average meter for now. His combos into FS are more limited than the other Shotos because he can’t special cancel his aerials, and even if he could, his only one that kills early is too slow for any of his ground moves to combo into it, so that should be fine.
+
+
+* Akuma has 3 Final Smashes, which depend on whether he’s in the air or on the ground rather than proximity to the opponent:
+   * Messatsu Hadoken is a reskinned version of Ryu’s Shinku Hadoken, but in the air it travels at a downward angle instead of forward. It only works in the air.
+   * Kongou Kokuretsuzan is Akuma’s close Final Smash. It works like Power Geyser, but it’s pretty slow. It only works on the ground.
+   * Shun Goku Satsu (Raging Demon) is a command Final Smash. The input for it is A, A, Forward, A, B, and it’s a command grab that deals 60% and leaves the opponent in a tech situation. It only works on the ground.
+* Meter type: Advantage
+* Meter gain: Average
